@@ -145,9 +145,9 @@ input password:
 input password again: 
 ```
 
-#### Rebooted and answer the questions (comming soon more detailed) and see if the keys has been deleted ;) 
+* Rebooted and answer the questions (comming soon more detailed) and see if the keys has been deleted ;) 
 
-#### **Enjoy the removal of the old keys! You are l33t!**
+**Enjoy the removal of the old keys! You are l33t!**
 
 ### Create your own keys/setup enrollment
 
@@ -262,7 +262,7 @@ Level of difficulty.........: `simple`
   
 ```
 
-G5 as extra features then older elitebooks for bios password. It is possible to set security settings to "Ignore" the cmos jumper and reset reset button if pressed on motherboard. If the setting is set to IGNORE you are fucked, you will NOT not succeed in getting around without programmers. so if you try on this unit and do not understand why it does not work, it is precisely because it can ignore this that many other Elitedesk can NOT.
+G5 has extra features then older elitebooks for bios password. It is possible to set security settings to "Ignore" the cmos jumper and reset reset button if pressed on motherboard. If the setting is set to IGNORE you are fucked, you will NOT not succeed in getting around without programmers. so if you try on this unit and do not understand why it does not work, it is precisely because it can ignore this that many other Elitedesk can NOT.
 
 #### The clip is easy to find, its under the below nvme disk (if you have two) and you can read the chip via a Soic Clip 8
 
@@ -312,9 +312,7 @@ G5 as extra features then older elitebooks for bios password. It is possible to 
 
 ![Press Me For Video](.800.g5.pics/fan_run_at_max.gif)
 
-#### First screen we gonna see is
-
-![Screenshot](.800.g5.pics/system_time_invalid.jpg)
+#### First screen we gonna see is that date is wrong, i didnt fix a picture on this. just press continue
 
 #### Second screen we gonna see is that intel firmware is fucked, press ok
 
@@ -424,8 +422,6 @@ If you got problems with system recovery via F11 and bios gonna say there is a p
 
 ## Help with password removal 
 
-
-
 I don't know if I will add this part here yet but upload your bios dump to any of the forums and I will help you or someone else will do, 
 
 I am active there too for this stuff. Please dump the right file and not the firmware file from EFI file. 
@@ -434,19 +430,41 @@ If you really don't know what im talking about, find me on irc and I will remove
 
 Cheers!
 
-## To be added soon.
+## Bios Upgrade via Linux
 
-* How to hack elitbooks bios password, same as above but with wson chips
-* How to hack a HP printer remotely
-* How we can change serial...
-* How we can change uuid....
-* How we can set values and how we can unlock the motherboard 
-* How we can get info from bios in powershell
-* How we can remove the bios from the bios binary file when we have readed the chip
-* How to get the SCM.bin tool for older devices (maybe)
-* How scm.bin works
-* How to get access to HP's private stuff that is public without they know it 
-....and alot more, to'be continued!
+DOwnload the bios for your device @hp.com
+extract the .exe file:
+
+```sh
+7x x spXXXXX.exe
+```
+
+```sh
+mkdir -p /boot/EFI/HP/BIOS/{New,Previous,Old,Current,Temp}
+mount /dev/bootPartiton /boot
+```
+
+```sh
+cp spXXXXX.exe/*.{bin,ini} /boot/EFI/HP/BIOS/New
+unmount /boot/
+reboot
+```
+
+Now, enter F9 and choose to boot from ifle, choose the correct file.
+
+Bios will now upgrade
+
+## Method 2 
+
+After you moved the correct file to New path on boot partition
+
+Turn off PC, while you holding win+b press power button for 2 seconds, release the power button but keep press win+b
+
+Bios upgrade should now start. 
+
+![Screenshot](.800.g5.pics/manually_update_via_liunx.jpg)
+
+Happy Upgrading!
 
 ## Repair SPM:
 
