@@ -343,9 +343,8 @@ G5 has extra features then older elitebooks for bios password. It is possible to
 
 #### Now, feel free to set your own bios password and then press F11 and choose network recovery
 
-![Screenshot](.800.g5.pics/installing_network_recovery.jpg)
 
-* Worlds most secured BIOS that has hardware protection was hacked in ~3.0 second! 
+* Worlds most secured BIOS that has hardware protection was "hacked" in ~3.0 second! We are now able to take over windows also! (will be added later) 
 * The only question I have to HP is, did you never try this? 
 * Do you now understand why I want to have a technical analysis for your tests? You talk about losses, re-start by showing your winnings based on false advertising instead.
 * You are a scam and fooling your customers with fabricated statistics! **Fuck you!**
