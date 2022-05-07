@@ -57,7 +57,11 @@ My first thought that appeared immediately was, if I short circuit the chip it w
 
 Sounds crazy? Maybe.. Not for me.. However, this repo will be updated frequently with all kind of HP Devices **AND** I will also include if I fail and what I failed at and what I did. I know there is alot of people that is interested in HP's security f these computers but on other platforms a GitHub.(Forums mostly)
 
-## Bypassing/Hacking Secureboot as a pro (to be updated)
+## Bypassing/Hacking Secure Boot as a pro (to be updated)
+
+Visit Rod Smiths wiki for get a deeper knowledge, its an awesome wiki imo and cover everything that is worth to know imo even for none refind users:
+
+![https://www.rodsbooks.com/refind/installing.html](https://www.rodsbooks.com/refind/installing.html)
 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
 
