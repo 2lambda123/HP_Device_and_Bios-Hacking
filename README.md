@@ -555,7 +555,7 @@ Enjoy!
 The Short CIRCUIT will NOT work on this device!!! Use your programmer to dump bios and remove the password with prefered hexedit tool
 and write it back to device without the  the bios password, its now fully unlocked! =D
 
-My modded custom clip grabbed this one aswell, you must have the pins outside the clip as on my picture the above for being able to touch the solder from the pins on the board since there is no legs, if you using a default clip it will just grab the black area and it will probably and like the picture below. See the zoomed version what happens with a non-modded / wson clipper (this is for avaoid soldering, that´s  boring rly)
+My modded custom clip grabbed this one aswell, you must have the pins outside the clip as on my picture the above for being able to touch the solder from the pins on the board since there is no legs, if you using a default clip it will just grab the black area and it will probably end like the picture below. See the zoomed version what happens with a non-modded / wson clipper (this is for avaoid soldering, that´s  boring rly)
 
 
 
