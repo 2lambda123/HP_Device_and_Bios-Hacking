@@ -388,7 +388,7 @@ G5 as extra features then older elitebooks for bios password. It is possible to 
 
 ## Invalid Manifest
 
-If you got problems with system recovery via F11 and bios gonna say there is a problem with manifest as: "error finding valid manifest" do as below (this problem was a mess with my Elitebook 870 G3 to figure out and solve: 
+If you got problems with system recovery via F11 and bios gonna say there is a problem with manifest as: "error finding valid manifest" do as below (this problem was a mess with my Elitebook 870 G3 to figure out and solve, hp now have a help part for this for several models on their site, not all devices are affected - Visit hp for more info if needed)
 
 ![Screenshot](.800.g5.pics/c06425212.png)
 
