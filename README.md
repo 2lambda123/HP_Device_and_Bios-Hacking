@@ -191,17 +191,22 @@ Certificate:
 ```
 * Now Reboot the target.
 
+***
+
 * Once the target reboots, the Shim UEFI Key Management screen is displayed where you are given the following options:
 
-```sh
-Continue boot
-Enroll MOK
+* Press: Continue boot
+
+
+* Press: Enroll MOK
+
 ![Screenshot](.secureboot.bypass/enroll_our_new_keys.jpg)
 
-Enroll key from disk
-Enroll hash from disk
+* Enroll key from disk
+* Enroll hash from disk
+
 ![Screenshot](.secureboot.bypass/mokmanagment.jpg)
-```
+
 
 #### Just some pictures from boot 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
