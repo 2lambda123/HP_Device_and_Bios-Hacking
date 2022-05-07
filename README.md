@@ -28,24 +28,12 @@ Please watch the video above to follow the story I will do overtime in this repo
 
 # HP's story:
 
-![Screenshot](https://japan.zdnet.com/storage/2021/06/10/ebe3e11946a47fef8f3d1ce7bc61978c/210610_hp_003.jpg)
-
 * "[What It Really Takes to Catch a Hacker | HP](https://www.youtube.com/watch?v=OiUPrio9eVY)"
-
 * "HP WOLF Security: The hacker is always on THE HUNT"
-
-* "THE WORLD'S MOST SECURE AND MANAGEABLE WORKDTATIONS"
-
+* "THE WORLD'S MOST SECURE AND MANAGEABLE WORKTATIONS"
 * "PROTECT SENSITIVE DATA AND IP, WITH HARDWARE-ENFORCED SECURITY"
-
 * "Sure Start Protects the Bios"
-
-* Wwhile in the case of WIPER of ransomware attacks or hadware attacks. Sure Recovery provices fast, effective recovery"
-
-* (Nice, I already knew you are creating ransomware ;)
-
-![Screenshot](https://www.securityopenlab.it/immagini/2021/05/hp-1.jpg)
-
+* While in the case of WIPER of ransomware attacks or hadware attacks. Sure Recovery provices fast, effective recovery"
 ....... it never ends, it's crazy!...... Lets end here else I must quote 100 things they claim in ads since the new name.
 
 # wuseman story:
@@ -62,14 +50,13 @@ They laught at me because i'm different. I laught at them becuase they all are t
 
 HP: My first bios I managed to hack was from Compaq and since that day when I was 6 years old I have followed your developers for over 30 years now. We do not have to guess, we know how good your employees are from asia with extremely small salaries while you pull in billions on misleading and false advertising. Who are the "bad guys" in your ads? We'll see. This repo will be updated frequently and recurring as you develop your security. 
 
-
 ***
 
 My first thought that appeared immediately was, if I short circuit the chip it will (please notice healing) heal itself not `recover/restore` itself, `healing` is an unusual word in these terms. I decide to belive my thoughts and the results can be found below .
 
 Sounds crazy? Maybe.. Not for me.. However, this repo will be updated frequently with all kind of HP Devices **AND** I will also include if I fail and what I failed at and what I did. I know there is alot of people that is interested in HP's security f these computers but on other platforms a GitHub.(Forums mostly)
 
-# Hacking Secureboot (incomplete part)
+## Bypassing/Hacking Secureboot as a pro (to be updated)
 
 Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed allways since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
 
@@ -84,9 +71,18 @@ mok + shim ... adding howto later
 ![Screenshot](.secureboot.bypass/mokmanagment.jpg)
 ![Screenshot](.secureboot.bypass/createderfiles.jpg)
 
-## Lets hack!
+## Lets Try Short Circuit the Chip
 
-### HP EliteDesk 800 G5/G2 (DANGEROUS METHOD)
+There is alot of people trying this already, but no public releases for the latest HP devices ($3000k devices) has been found. Good question below and good answer was provided on the url below, it simply depends! Again, be careful
+
+"Long story short when testing some IC chips in circuit and powered on I must have touched a couple legs at once causing a chip to short. My quick question, is this damage usually contained just to the chip itself or does it spread to surrounding resistors and capacitors etc.? No smoke or burnt components or anything like that."
+
+Q: Is this damage usually contained just to the chip itself or does it spread to surrounding resistors and capacitors etc? 
+A: It Depends....
+
+[IC Chip short circuit repercussions]https://gearspace.com/board/geekzone/1291898-ic-chip-short-circuit-repercussions.html
+
+### Lets begin with a HP EliteDesk 800 GX + G5 (DANGEROUS METHOD)
 
 ```sh
 Born On Date................: `2022-03-01`
@@ -107,7 +103,7 @@ Level of difficulty.........: `simple`
   
 ```
 
-This device has an extra option for bios password. It is possible to set security settings to "Ignore" the cmos jumper and reset reset button if pressed on motherboard. If the setting is set to IGNORE you are fucked, you will NOT not succeed in getting around without programmers. so if you try on this unit and do not understand why it does not work, it is precisely because it can ignore this that many other Elitedesk can NOT.
+G5 as extra features then older elitebooks for bios password. It is possible to set security settings to "Ignore" the cmos jumper and reset reset button if pressed on motherboard. If the setting is set to IGNORE you are fucked, you will NOT not succeed in getting around without programmers. so if you try on this unit and do not understand why it does not work, it is precisely because it can ignore this that many other Elitedesk can NOT.
 
 #### The clip is easy to find, its under the below nvme disk (if you have two) and you can read the chip via a Soic Clip 8
 
@@ -421,6 +417,15 @@ Download NeoProgrammer v2.2.0.10 and put the clip on the chip, read bios for bac
 
 ***
 
+## Advanced Tools / Recommended Tools - Windows:
+
+Greetings to Jeff, all resepect!
+
+![RWEverything - All versions](http://rweverything.com/download/)
+
+![Screenshot](http://rweverything.com/wp-content/uploads/RWEverything.png)
+
+... Alot more to be added very soon
 
 ## HP Urls:
 
