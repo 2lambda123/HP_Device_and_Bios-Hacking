@@ -129,13 +129,11 @@ This device has an extra option for bios password. It is possible to set securit
 
 * REMOVE THE BATTERY BEFORE DOING THIS!
 
-#### Fuck, now things was bricked! I thought
+#### Holy maria! it does not even start!
 
 ![Screenshot](.800.g5.pics/it_does_not_start.gif)
 
-#### Leaving AC out and pressing power button for 25 seconds, gave life to the computer, damn now it flashes red and beeps every time the led flashes! According to the HP dev manual for what 3 x beeps + 3 red flashing indicates its the CPU or GPU. What the hell? It should be 4.2 seconds before it breaks on cpu, mem, motherboard, bios or gpu!
-
-#### Holy maria! it does not even start!
+#### Leaving AC out and pressing power button for 25 seconds, gave life to the computer, damn now it flashes red and beeps every time the led flashes! According to the HP dev manual for what 3 x beeps + 3 red flashing indicates its the CPU or GPU. What the hell? It should be 4.2 seconds before it breaks on cpu, mem, motherboard, bios or gpu! Fuck, now things was bricked! I thought:
 
 ![Screenshot](.800.g5.pics/leds_blinking_red.gif)
 
