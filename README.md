@@ -1,4 +1,4 @@
-> ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" way how things should be done. I do not recommend **anyone to use my methods wich is tagged (DANGEROUS METHOD) if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. You have been warned.
+> ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" way how things should be done. I do not recommend **anyone to use my methods wich is tagged (DANGEROUS METHOD) if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. No harm has been done on HP's property and I would never try to do something that is not owned by myself.
 
 <p align="center">
   <img src="https://i.imgur.com/haDz3G6.png" />
@@ -12,7 +12,7 @@
 > the developer can never be held responsible for the actions of other users and I have warned you! 
 > If the computer is dead, you cant fix it without replacing the  the motherboard. The chip alone is not enough 
 
-> This repo can contain illegal acts depending on the country you live in. It is strictly forbidden and it can end with penalties in high penalties such as imprisonment for fraudulent behavior. You are responsible for your own actions and you can never ever blame wuseman for your acts. **Manipulating** data of various things to deceive a third party by selling a computer where hardware figures are manipulated and false  warranty can be presented  is a very serious crime, in almost all countries.. I urge no one to commit crimes, I dedicate this repo to everyone as a non-profit hacker/cracker of software and hardware devices to show how you are deceived by advertising. 
+> This repo can contain illegal acts depending on the country you live in. It is strictly forbidden and it can end with high penalties such as imprisonment for fraudulent behavior. You are responsible for your own actions and you can never ever blame wuseman for your acts. **Manipulating** data of various things to deceive a third party by selling a computer where hardware figures are manipulated and false  warranty can be presented  is a very serious crime, in almost all countries.. I urge no one to commit crimes, I dedicate this repo to everyone as a non-profit hacker/cracker of software and hardware devices to show how you are deceived by advertising. 
 
 ***
 
