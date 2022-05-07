@@ -160,14 +160,14 @@ openssl x509 -in shim_cert.crt -inform PEM -out shim_cert.cer -outform DER
 openssl x509 -in vendor_cert.crt  -inform PEM -out vendor_cert.cer  -outform DER
 ```
 
-* Enroll the shim_cert.cer certificate.
+#### Enroll the shim_cert.cer certificate.
 ```sh
 mokutil --import shim_cert.cer
 
 ```
-You must set up the password for this MoK manipulation request, as this password is required by the shim loader in the next reboot.
+* You must set up the password for this MoK manipulation request, as this password is required by the shim loader in the next reboot.
 
-* Review the key enrollments.
+#### Review the key enrollments.
 
 Use the following command to verify whether a key is active already or not:
 
@@ -178,7 +178,8 @@ mokutil --test-key shim_cert.cer
 ```sh
 mokutil --test-key vendor_cert.cer
 ```
-Since the vendor_cert.cer key is the built-in certificate in the boot loader, is is enrolled during the first boot. Use the following command to list the current key enrollment requests:
+* Since the vendor_cert.cer key is the built-in certificate in the boot loader, is is enrolled during the first boot. Use the following command to list the current key enrollment requests:
+
 ```sh
 mokutil --list-new
 [key 1]
@@ -190,7 +191,7 @@ Certificate:
 ```
 * Now Reboot the target.
 
-Once the target reboots, the Shim UEFI Key Management screen is displayed where you are given the following options:
+* Once the target reboots, the Shim UEFI Key Management screen is displayed where you are given the following options:
 
 ```sh
 Continue boot
@@ -201,7 +202,7 @@ Enroll key from disk
 Enroll hash from disk
 ![Screenshot](.secureboot.bypass/mokmanagment.jpg)
 ```
-.....
+
 
 
 
@@ -211,6 +212,7 @@ Enroll hash from disk
 ![Screenshot](.secureboot.bypass/sha256hash.jpg)
 ![Screenshot](.secureboot.bypass/createderfiles.jpg)
 
+***
 
 ## Lets Try Short Circuit the Chip
 
@@ -221,9 +223,9 @@ There is alot of people trying this already, but no public releases for the late
 Q: Is this damage usually contained just to the chip itself or does it spread to surrounding resistors and capacitors etc? 
 A: It Depends....
 
-[IC Chip short circuit repercussions]https://gearspace.com/board/geekzone/1291898-ic-chip-short-circuit-repercussions.html
+[IC Chip short circuit repercussions](https://gearspace.com/board/geekzone/1291898-ic-chip-short-circuit-repercussions.html)
 
-### Lets begin with a HP EliteDesk 800 GX + G5 (DANGEROUS METHOD)
+## HP EliteDesk 800 GX + G5 (DANGEROUS METHOD)
 
 ```sh
 Born On Date................: `2022-03-01`
