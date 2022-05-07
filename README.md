@@ -67,7 +67,7 @@ I will only show how to install this in Gentoo, it should work on other distros 
 
 We need mokutil and shim, please dont do anything here if you dont know exactly what you are doing like reseting the keys or something 
 
-- WE WANT TO MAKE BACKUP FROM THE EARLIER SETUP and BACKUP THE KEYS
+* WE WANT TO MAKE BACKUP FROM THE EARLIER SETUP and BACKUP THE KEYS
 
 ```sh
 * sys-boot/mokutil
@@ -83,16 +83,16 @@ We need mokutil and shim, please dont do anything here if you dont know exactly 
      Description:         Fedora's signed UEFI shim
 ```
 
-Installing shim and mokuti, no useflags available so we just installing them as usual, we also gonna install openssl since we need this for create keys and also ca-certificates
+* Installing shim and mokuti, no useflags available so we just installing them as usual, we also gonna install openssl since we need this for create keys and also ca-certificates
 
 ```sh
 emerge -av sys-boot/mokutil sys-boot/shim app-misc/ca-certificates dev-lib/openssl
 ```
 
-First, list all enrolled or new keys
+* First, list all enrolled or new keys
 
 ```sh
- mokutil --list-enrolled
+mokutil --list-enrolled
 [key 1]
 SHA1 Fingerprint:....
 ...
@@ -100,27 +100,27 @@ SHA1 Fingerprint:....
 SHA1 Fingerprint:....
 ```
 
-List new keys
+* List new keys
 
 ```sh
 mokutil --list-new
-``
+```
 
-You can check the current secureboot state with:
+* You can check the current secureboot state with:
 
 ```sh
 mokutil --sb-state
 ```
 
-You want to export the current keys if there is any, of course ;)
+* You want to export the current keys if there is any, of course ;)
 
 ```sh
 mokutil --export
-``
+```
 
-The above command will give you .der keys named: MOK-000X.der, save them, lets continue:
+* The above command will give you .der keys named: MOK-000X.der, save them, lets continue:
 
-You now want to delete the old keys, you can use wildcard for this part as below: 
+* You now want to delete the old keys, you can use wildcard for this part as below: 
 
 ```sh
 mokutil --delete MOK*.der
@@ -134,21 +134,83 @@ sudo mokutil --root-pw
 ....or a custom password
 ```sh
 sudo mokutil --password
-Password: 
-Confirm:
+input password: 
+input password again: 
 ```
 
 Rebooted and answer the questions (comming soon more detailed) and see if the keys has been deleted ;) 
 
-* Enjoy!
+* Enjoy the removal of the old keys! Pwnz!
+
+Alright, how to create keys..
+
+Verify that MOK is enabled. Use the following commands on the target to enable or disable MOK:
+```sh
+mokutil --enable-validation
+mokutil --disable-validation
+```
+
+* You use this password to manage keys using mokutil and to confirm their enrollment and other operations when the MOK manager is running. In addition to console input, mokutil supports other methods to input the password. Please see the --hash-file, --root-pw, and --simple-hash options in the man page.
+
+* Enroll a key certificate.
+
+Convert a standard PEM key to a DER-formatted X509 certificate for shim_cert.cer and vendor_cert.cer.
+```sh
+openssl x509 -in shim_cert.crt -inform PEM -out shim_cert.cer -outform DER
+openssl x509 -in vendor_cert.crt  -inform PEM -out vendor_cert.cer  -outform DER
+```
+
+* Enroll the shim_cert.cer certificate.
+```sh
+mokutil --import shim_cert.cer
+
+```
+You must set up the password for this MoK manipulation request, as this password is required by the shim loader in the next reboot.
+
+* Review the key enrollments.
+
+Use the following command to verify whether a key is active already or not:
+
+```sh
+mokutil --test-key shim_cert.cer
+```
+
+```sh
+mokutil --test-key vendor_cert.cer
+```
+Since the vendor_cert.cer key is the built-in certificate in the boot loader, is is enrolled during the first boot. Use the following command to list the current key enrollment requests:
+```sh
+mokutil --list-new
+[key 1]
+SHA1 Fingerprint: .........
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+```
+* Now Reboot the target.
+
+Once the target reboots, the Shim UEFI Key Management screen is displayed where you are given the following options:
+
+```sh
+Continue boot
+Enroll MOK
+![Screenshot](.secureboot.bypass/enroll_our_new_keys.jpg)
+
+Enroll key from disk
+Enroll hash from disk
+![Screenshot](.secureboot.bypass/mokmanagment.jpg)
+```
+.....
 
 
+
+#### Just some pictures from boot 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
 ![Screenshot](.secureboot.bypass/security_viaolation.jpg)
-![Screenshot](.secureboot.bypass/enroll_our_new_keys.jpg)
 ![Screenshot](.secureboot.bypass/sha256hash.jpg)
-![Screenshot](.secureboot.bypass/mokmanagment.jpg)
 ![Screenshot](.secureboot.bypass/createderfiles.jpg)
+
 
 ## Lets Try Short Circuit the Chip
 
