@@ -378,7 +378,7 @@ G5 has extra features then older elitebooks for bios password. It is possible to
 
 ![Screenshot](.800.g5.pics/tpm_cleared.jpg)
 
-#### Followed by reset all security featrures, not eve thief protection will help the owner
+#### Followed by reset all security featrures, not eve theft protection will help the owner, we can permanent disable this (permanent is not permanent as forever, we can rewrite the chip ofc)
 
 ![Screenshot](.800.g5.pics/reset_all_security_features.png)
 
