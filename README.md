@@ -243,6 +243,7 @@ This device has an extra option for bios password. It is possible to set securit
 
 ```sh
 1. Power on the computer.
+```
 
 ```sh
 2. Press F3 to enter the 3rd Party Option ROM Management menu.
