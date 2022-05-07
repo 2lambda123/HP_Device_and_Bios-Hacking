@@ -67,7 +67,7 @@ I dont like those distros or windows so I will add how to fix this so we can boo
 
 I will only show how to install this in Gentoo, it should work on other distros also but I don't know.
 
-We need mokutil and shim, please dont do anything here if you dont know exactly what you are doing like reseting the keys or something 
+We need mokutil and shim, please dont do anything here if you dont know exactly what you are doing like reseting the keys or something then leave it as it is and use any distro that does this for you:
 
 * WE WANT TO MAKE BACKUP FROM THE EARLIER SETUP and BACKUP THE KEYS
 
@@ -85,7 +85,7 @@ We need mokutil and shim, please dont do anything here if you dont know exactly 
      Description:         Fedora's signed UEFI shim
 ```
 
-* Installing shim and mokuti, no useflags available so we just installing them as usual, we also gonna install openssl since we need this for create keys and also ca-certificates
+* Installing shim and mokuti,, no useflags are available so we just installing them as usual, we also gonna install openssl since we need this for create keys and also ca-certificates
 
 ```sh
 emerge -av sys-boot/mokutil sys-boot/shim app-misc/ca-certificates dev-lib/openssl
@@ -120,7 +120,7 @@ mokutil --sb-state
 mokutil --export
 ```
 
-* The above command will give you .der keys named: MOK-000X.der, save them, lets continue:
+The above command will give you .der keys named: MOK-000X.der, save them in some encrypted container or at least secure place (security is always nr1, encrypt everything): 
 
 * You now want to delete the old keys, you can use wildcard for this part as below: 
 
@@ -128,21 +128,21 @@ mokutil --export
 mokutil --delete MOK*.der
 ```
 
-If you want, set root password: 
+* If you want, set root password: 
 ```sh
 sudo mokutil --root-pw
 ```
 
-....or a custom password
+* ....or a custom password
 ```sh
 sudo mokutil --password
 input password: 
 input password again: 
 ```
 
-Rebooted and answer the questions (comming soon more detailed) and see if the keys has been deleted ;) 
+* Rebooted and answer the questions (comming soon more detailed) and see if the keys has been deleted ;) 
 
-* Enjoy the removal of the old keys! Pwnz!
+* Enjoy the removal of the old keys! You Pwnz!
 
 #### Create your own keys/setup enrollment
 
