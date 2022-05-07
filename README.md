@@ -1,4 +1,4 @@
-> ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" way how things should be done. I do not recommend **anyone to use my methods if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. You have been warned.
+> ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" way how things should be done. I do not recommend **anyone to use my methods wich is tagged (DANGEROUS METHOD) if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. You have been warned.
 
 <p align="center">
   <img src="https://i.imgur.com/haDz3G6.png" />
