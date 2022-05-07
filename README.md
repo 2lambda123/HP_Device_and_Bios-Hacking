@@ -100,7 +100,7 @@ This device has an extra option for bios password. It is possible to set securit
 ![Screenshot](.800.g5.pics/nvme.slot2.jpg)
 ![Screenshot](.800.g5.pics/clip_chip.jpg)
 
-> THIS WILL BRICK YOUR PC IF YOU - DO IT ON YOUR OWN RISK!! 
+> THIS WILL BRICK YOUR PC - DO IT ON YOUR OWN RISK!! 
 > PLEASE NOTICE THE LEGS 1, 7, 8 are from my PICTURE, NOT FROM THE DATASHEET!!!
 
 * A wire on pin  1 and 7 for ~1.2s erased Intel Firmware 
