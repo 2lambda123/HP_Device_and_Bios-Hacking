@@ -69,7 +69,7 @@ https://www.rodsbooks.com/refind/installing.html
 
 Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed always since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
 
-This will fix this so we can boot Gentoo Minimal CD because with secureboot enable, this is not very advanced. Pretty simple (to make things easier use reFIND bootloader from the url at top of this section from rodsbooks.com)
+This will fix this so we can boot Gentoo Minimal CD because with secureboot enable you gonna be stopped by the picture as above that says "image did not authenticate".
 
 * BACKUP THE KEYS FROM OLDER INSTALL BEFORE YOU DOING ANYTHING STUPID AS ERASE OR RESE THE KEYS
 
