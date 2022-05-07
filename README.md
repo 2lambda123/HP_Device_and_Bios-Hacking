@@ -77,12 +77,12 @@ I dont like those distros or windows so I will add how to fix this so we can boo
 
 mok + shim ... adding howto later
 
-[Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
-[Screenshot](.secureboot.bypass/security_viaolation.jpg)
-[Screenshot](.secureboot.bypass/enroll_our_new_keys.jpg)
-[Screenshot](.secureboot.bypass/sha256hash.jpg)
-[Screenshot](.secureboot.bypass/mokmanagment.jpg)
-[Screenshot](.secureboot.bypass/createderfiles.jpg)
+![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
+![Screenshot](.secureboot.bypass/security_viaolation.jpg)
+![Screenshot](.secureboot.bypass/enroll_our_new_keys.jpg)
+![Screenshot](.secureboot.bypass/sha256hash.jpg)
+![Screenshot](.secureboot.bypass/mokmanagment.jpg)
+![Screenshot](.secureboot.bypass/createderfiles.jpg)
 
 ## Lets hack!
 
