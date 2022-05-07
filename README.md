@@ -532,10 +532,6 @@ So .. Short circuit trick is dangerous but I wanted to confirm this for Eliteboo
 * Other chips for test the microscrope, they pretty good.
 ![Screenshot](.870.g3/20220131133237569.jpg)
 
-
-![Screenshot](.870.g3/)
-![Screenshot](.870.g3/)
-
 #### Now we have a valid license and activated Windows 10 from stock, now go reinstall firmware and get the hell out of Windows (nah, we must run some stuff here before we do that, i will add how we gonna take over TPM later)
 
 ![Screenshot](.870.g3/legally_installed_home_edition.jpg)
