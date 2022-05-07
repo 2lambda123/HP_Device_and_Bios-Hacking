@@ -203,9 +203,6 @@ Enroll hash from disk
 ![Screenshot](.secureboot.bypass/mokmanagment.jpg)
 ```
 
-
-
-
 #### Just some pictures from boot 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
 ![Screenshot](.secureboot.bypass/security_viaolation.jpg)
@@ -216,7 +213,7 @@ Enroll hash from disk
 
 ## Lets Try Short Circuit the Chip
 
-There is alot of people trying this already, but no public releases for the latest HP devices ($3000k devices) has been found. Good question below and good answer was provided on the url below, it simply depends! Again, be careful
+There is alot of people trying this already since the protection has been very good (Started with Probooks), but no public releases for the latest HP devices has been found. Good question below and good answer was provided on the url below, it simply depends! Again, be careful
 
 "Long story short when testing some IC chips in circuit and powered on I must have touched a couple legs at once causing a chip to short. My quick question, is this damage usually contained just to the chip itself or does it spread to surrounding resistors and capacitors etc.? No smoke or burnt components or anything like that."
 
