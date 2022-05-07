@@ -34,7 +34,8 @@ Please watch the video above to follow the story I will do overtime in this repo
 * "PROTECT SENSITIVE DATA AND IP, WITH HARDWARE-ENFORCED SECURITY"
 * "Sure Start Protects the Bios"
 * While in the case of WIPER of ransomware attacks or hadware attacks. Sure Recovery provices fast, effective recovery"
-....... it never ends, it's crazy!...... Lets end here else I must quote 100 things they claim in ads since the new name.
+
+....... it never ends, it's crazy they talk so much and provide 0 proofs, 0!!!...... 
 
 # wuseman story:
 
@@ -60,9 +61,87 @@ Sounds crazy? Maybe.. Not for me.. However, this repo will be updated frequently
 
 Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed always since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
 
-I dont like those distros or windows so I will add how to fix this so we can boot gentoo minimal cd 
+I dont like those distros or windows so I will add how to fix this so we can boot Gentoo Minimal CD:
 
-mok + shim ... adding howto later
+I will only show how to install this in Gentoo, it should work on other distros also but I don't know.
+
+We need mokutil and shim, please dont do anything here if you dont know exactly what you are doing like reseting the keys or something 
+
+- WE WANT TO MAKE BACKUP FROM THE EARLIER SETUP and BACKUP THE KEYS
+
+```sh
+* sys-boot/mokutil
+     Available versions:  (~)0.3.0_p20170405 (~)0.5.0-r1
+     Homepage:            https://github.com/lcp/mokutil
+     Description:         The utility to manipulate machines owner keys which managed in shim
+```
+
+```sh
+* sys-boot/shim
+     Available versions:  15.5-r1
+     Homepage:            https://apps.fedoraproject.org/packages/shim/
+     Description:         Fedora's signed UEFI shim
+```
+
+Installing shim and mokuti, no useflags available so we just installing them as usual, we also gonna install openssl since we need this for create keys and also ca-certificates
+
+```sh
+emerge -av sys-boot/mokutil sys-boot/shim app-misc/ca-certificates dev-lib/openssl
+```
+
+First, list all enrolled or new keys
+
+```sh
+ mokutil --list-enrolled
+[key 1]
+SHA1 Fingerprint:....
+...
+[key 2]
+SHA1 Fingerprint:....
+```
+
+List new keys
+
+```sh
+mokutil --list-new
+``
+
+You can check the current secureboot state with:
+
+```sh
+mokutil --sb-state
+```
+
+You want to export the current keys if there is any, of course ;)
+
+```sh
+mokutil --export
+``
+
+The above command will give you .der keys named: MOK-000X.der, save them, lets continue:
+
+You now want to delete the old keys, you can use wildcard for this part as below: 
+
+```sh
+mokutil --delete MOK*.der
+```
+
+If you want, set root password: 
+```sh
+sudo mokutil --root-pw
+```
+
+....or a custom password
+```sh
+sudo mokutil --password
+Password: 
+Confirm:
+```
+
+Rebooted and answer the questions (comming soon more detailed) and see if the keys has been deleted ;) 
+
+* Enjoy!
+
 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
 ![Screenshot](.secureboot.bypass/security_viaolation.jpg)
