@@ -232,8 +232,12 @@ There is alot of people trying this already since the protection has been very g
 
 "Long story short when testing some IC chips in circuit and powered on I must have touched a couple legs at once causing a chip to short. My quick question, is this damage usually contained just to the chip itself or does it spread to surrounding resistors and capacitors etc.? No smoke or burnt components or anything like that."
 
+```sh
 Q: Is this damage usually contained just to the chip itself or does it spread to surrounding resistors and capacitors etc? 
 A: It Depends....
+```
+
+It's a very hard question to answer, really. Hack to learn not learn to hack and you will figure out ;)
 
 [IC Chip short circuit repercussions](https://gearspace.com/board/geekzone/1291898-ic-chip-short-circuit-repercussions.html)
 
