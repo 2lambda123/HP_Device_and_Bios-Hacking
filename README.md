@@ -267,7 +267,11 @@ This device has an extra option for bios password. It is possible to set securit
 
 
 
-I don't know if I will add this part here yet but upload your bios dump to any of the forums and I will help you or someone else, I am active there too for this stuff. Please dump the right file and not the firmware file from EFI file. 
+I don't know if I will add this part here yet but upload your bios dump to any of the forums and I will help you or someone else will do, 
+
+I am active there too for this stuff. Please dump the right file and not the firmware file from EFI file. 
+
+If you really don't know what im talking about, find me on irc and I will remove the password for you, for free, dont pay for things you don't need ;)
 
 Cheers!
 
