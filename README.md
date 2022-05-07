@@ -142,7 +142,7 @@ Rebooted and answer the questions (comming soon more detailed) and see if the ke
 
 * Enjoy the removal of the old keys! Pwnz!
 
-Alright, how to create keys..
+#### Create your own keys/setup enrollment
 
 Verify that MOK is enabled. Use the following commands on the target to enable or disable MOK:
 ```sh
