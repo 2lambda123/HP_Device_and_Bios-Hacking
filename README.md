@@ -98,7 +98,7 @@ This device has an extra option for bios password. It is possible to set securit
 ![Screenshot](.800.g5.pics/nvme.slot2.jpg)
 ![Screenshot](.800.g5.pics/clip_chip.jpg)
 
-> THIS WILL BRICK YOUR PC IF YOU ARE NOT - DO IT ON YOUR OWN RISK!! 
+> THIS WILL BRICK YOUR PC IF YOU - DO IT ON YOUR OWN RISK!! 
 > PLEASE NOTICE THE LEGS 1, 7, 8 are from my PICTURE, NOT FROM THE DATASHEET!!!
 
 * A wire on pin  1 and 7 for ~1.2s erased Intel Firmware 
@@ -216,6 +216,14 @@ This device has an extra option for bios password. It is possible to set securit
 ![Screenshot](.800.g5.pics/reset_all_security_features.png)
 
 ***
+
+## Help with password removal 
+
+
+
+I don't know if I will add this part here yet but upload your bios dump to any of the forums and I will help you or someone else, I am active there too for this stuff. Please dump the right file and not the firmware file from EFI file. 
+
+Cheers!
 
 ## To be added soon.
 
