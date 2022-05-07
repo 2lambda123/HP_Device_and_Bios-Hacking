@@ -198,7 +198,7 @@ Certificate:
 * Press: Continue boot
 
 
-* Press: Enroll MOK
+* Press: Enroll MOK, choose yes!
 
 ![Screenshot](.secureboot.bypass/enroll_our_new_keys.jpg)
 
@@ -207,8 +207,9 @@ Certificate:
 
 ![Screenshot](.secureboot.bypass/mokmanagment.jpg)
 
+* Enroll your keys and enter password. Enjoy
 
-#### Just some pictures from boot 
+#### Just some pictures from boot for later 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
 ![Screenshot](.secureboot.bypass/security_viaolation.jpg)
 ![Screenshot](.secureboot.bypass/sha256hash.jpg)
