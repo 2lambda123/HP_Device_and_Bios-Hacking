@@ -55,7 +55,7 @@ HP: My first bios I managed to hack was from Compaq and since that day when I wa
 
 My first thought that appeared immediately was, if I short circuit the chip it will (please notice healing) heal itself not `recover/restore` itself, `healing` is an unusual word in these terms. I decide to belive my thoughts and the results can be found below .
 
-Sounds crazy? Maybe.. Not for me.. I love to try crazy things which should be "impossible". I have strangely enough succeeded with many crazy and wierd "hacks" of all kind that should not be possible BUT I will not lie for anyone, I have also failed a lot before I got older and wiser. These are things I will talk about that when I retire, until then I will continue to do everything in my power to try to hack time so then count backwards. =) 
+Sounds crazy? Maybe.. Not for me.. I love to try crazy things which should be "impossible". I have strangely enough succeeded with many crazy and wierd "hacks" of all kind that should not be possible BUT I will not lie for anyone, I have also failed a lot before I got older and wiser. These are things I will talk about that when I retire, until then I will continue to do everything in my power to try to hack time to count backwards. =) 
 
 ## Bypassing/Hacking Secure Boot as a pro (to be updated)
 
