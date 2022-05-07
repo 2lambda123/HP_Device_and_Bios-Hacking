@@ -466,6 +466,94 @@ Bios upgrade should now start.
 
 Happy Upgrading!
 
+## HP Elitebook 870 G3 (DANGEROUS METHOD)
+
+Belive it or not. You maybe thought it was just luck what I was trying, as I did. So i decided to ask a friend to try in his PC as well. See the result below, brand new laptop:
+
+I wont add all pictures again, i will show you the really needed pictures otherwise you can follow the same step as above its the same story for elitebooks with the latest bioses that is self-healing (really latest models only)
+
+So .. Short circuit trick is dangerous but I wanted to confirm this for Elitebooks also.. It's no coincidence, it's wuseman power.. nah is not, its because HP fucking sucks! I guess they spent billions of dollars in their ads and their bios is hacking by short cuiiting their bios chip and then we dont even need to fix it, it healing itself! This has to be the dumbest thing I've ever been through. As I said, it also works on elitebook! Same legs from my view, same seconds (3.0seconds) on a different chip, i toke some picture on it with my microscope. See below, no descriptions will be added unless its something I really wanna share since its the same story as above dangerous method. there is fucking expensive clips for WSON chips for ~100-300$, these. If you are careful enough, you can do the same as me, otherwise you have to take the heat gun and solder and stuff.
+
+
+
+
+#### Same as above but on the elitebook i was able to take a picture, this is how it looks after we boots first time when device has been acting as the elitedesk
+
+* Didnt start
+* Caps lock led + numlock led was flashing 7 times ( i will add a video later i cant find it now )
+* fan runs at 10k rpm or something, rebooting and doing this for few times and we now got into this screen:
+
+![Screenshot](.870.g3/timeisinvalid.jpg)
+#### This never happened on elitedesks only on elitebook, I guess thats cause the software and efi can't communicate anymore since the bios was erased and now healed 
+![Screenshot](.870.g3/nosystem.jpg)
+
+#### Sure Recovery, every screen that will popup
+
+#### Downloading Boot.wmi
+
+![Screenshot](.870.g3/boot.wim.jpg)
+
+#### Downloading Boot.sdi
+
+![Screenshot](.870.g3/boot.sdi.jpg)
+
+#### Downloadint BCD
+![Screenshot](.870.g3/bcd)
+
+
+#### Device that was hacked in 3.0 seconds and I confirmed the same shit works on this healing bios. But i don't recommending anyone to try, use the safe method otherwise you may get a broken cpu,gpu,mem,motherboard or anything:
+
+![Screenshot](.870.g3/system_info.jpg)
+
+#### Connect to wifi via CIRCA (F3 in bios menu)
+
+* WIFI REQUIRED SINCE THERE IS NO ETHERNE INPUT ON THIS ONE 
+
+![Screenshot](.870.g3/1111.jpg)
+![Screenshot](.870.g3/wifi.jpg)
+
+
+
+#### Preparing HP Setup + Windows
+![Screenshot](.870.g3/IMG_20220131_141511.jpg)
+
+
+
+#### WSON Bios Chip 
+
+* Winbond 25Q256JVEN 2111 6048 CZ900 - Tested my new microscope usb, not perfect photos but it was the first time I used it :P
+![Screenshot](.870.g3/20220131133624067.jpg)
+![Screenshot](.870.g3/20220131133352413.jpg)
+![Screenshot](.870.g3/chip4.jpg)
+![Screenshot](.870.g3/chip5.jpg)
+
+
+
+* Other chips for test the microscrope, they pretty good.
+![Screenshot](.870.g3/20220131133237569.jpg)
+
+
+![Screenshot](.870.g3/)
+![Screenshot](.870.g3/)
+
+#### Now we have a valid license and activated Windows 10 from stock, now go reinstall firmware and get the hell out of Windows (nah, we must run some stuff here before we do that, i will add how we gonna take over TPM later)
+
+![Screenshot](.870.g3/legally_installed_home_edition.jpg)
+
+
+# Recommended, safe way. Follow the same steps as on elitedesk but you need either a modded clip or a wson programmer, here is my modded one.
+
+#### My special clip in progress
+![Screenshot](.870.g3/my_custom_clip.jpg)
+![Screenshot](.870.g3/myclipconnectedtowsonchip.jpg)
+
+
+Enjoy!
+
+
+
+
+
 ## Repair SPM:
 
 > This is only needed if you short circuited the bios, otherwise you can fix this in bios settings under security.
