@@ -69,11 +69,7 @@ https://www.rodsbooks.com/refind/installing.html
 
 Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed always since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
 
-I dont like those distros or windows so I will add how to fix this so we can boot Gentoo Minimal CD:
-
-I will only show how to install this in Gentoo, it should work on other distros also but I don't know.
-
-We need mokutil and shim, please dont do anything here if you dont know exactly what you are doing like reseting the keys or something then leave it as it is and use any distro that does this for you:
+This will fix this so we can boot Gentoo Minimal CD and not need any other distro for chroot into our install.This should work on other distros also but I don't know. We need mokutil and shim, please dont do anything here if you dont know exactly what you are doing like reseting the keys or something then leave it as it is and use any distro that does this for you:
 
 * WE WANT TO MAKE BACKUP FROM THE EARLIER SETUP and BACKUP THE KEYS
 
