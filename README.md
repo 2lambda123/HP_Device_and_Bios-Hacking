@@ -687,8 +687,6 @@ Now lets continue
 
 This is the The Secure/Recommended/Best way to erase the bios password by dump the current bios file, remove the password via prefered hexeditor, write the hacked dump without any password back to chip, voila - Done! Well, its not that easy maybe but follow below steps and everything will be fine :) 
 
-## Windows:
-
 #### Flashrom will detect your chip and know its model by itself:
 
 * Read Chip
