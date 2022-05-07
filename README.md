@@ -1,5 +1,3 @@
-
-
 > ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" way how things should be done. I do not recommend **anyone to use my methods if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. You have been warned, this text will be removed but this repo is FAR away from done. I have hacked those devices since years now and created shotgun tools for older bioses from HP (my first hack as kid was a compaq bios pw). I will add alot of stuff that is not known for the public during time + tools for manipulates data and tools that is used before the motherboards is programmed by manufaturer(HP)..  
 
 <p align="center">
@@ -8,13 +6,9 @@
   <h3 align="center">---=== <i>Elitebook</i> - ThinClient - <i>EliteDesk</i> - PowerBook - Printers - BIOS  ===---</i></h3>
 </p>
 
-
-
 ***
-
-
 > ⚠ WARNING: USE EVERYTHING IN THIS REPO AT YOUR OWN RISK  
-> ⚠ WARNING: YOUR COMPUTER WILL BE BRICKED - THERE IS NO GUARANTEES !!.**  
+> ⚠ WARNING: YOUR COMPUTER WILL BE BRICKED - THERE IS NO GUARANTEES !!
 > the developer can never be held responsible for the actions of other users and I have warned you! 
 > If the computer is dead, you cant fix it without replacing the  the motherboard. The chip alone is not enough 
 
@@ -42,7 +36,7 @@ Please watch the video above to follow the story I will do overtime in this repo
 
 * "THE WORLD'S MOST SECURE AND MANAGEABLE WORKDTATIONS"
 
-* "PPROTECT SENSITIVE DATA AND IP .- WITH HARDWARE-ENFORCED SECURITY"
+* "PROTECT SENSITIVE DATA AND IP, WITH HARDWARE-ENFORCED SECURITY"
 
 * "Sure Start Protects the Bios"
 
@@ -222,6 +216,35 @@ This device has an extra option for bios password. It is possible to set securit
 #### Followed by reset all security featrures, not eve thief protection will help the owner
 
 ![Screenshot](.800.g5.pics/reset_all_security_features.png)
+
+#### If you got problems with system recovery via F11 and bios gonna say there is a problem with manifest as: "error finding valid manifest" do as below (this problem was a mess with my Elitebook 870 G3 to figure out and solve: 
+
+![Screenshot](.800.g5.pics/c06425212.png)
+
+* **To avoid the issue:**
+* Do not initiate a Preboot network enabled feature when the computer is on low battery power.
+* Avoid pressing the power button.
+* Do not use the CTRL+ALT+DEL key combination to restart the computer while a download or upload is in progress.
+* To work around this issue, perform the following steps to reset the IPv4 configuration:
+
+```sh
+1. Power on the computer.
+
+```sh
+2. Press F3 to enter the 3rd Party Option ROM Management menu.
+```
+
+```sh
+3. Navigate to Network Device List -> MAC:xx:xx:xx:xx:xx:xx -> IPv4 Network Configuration.
+```
+
+```sh
+4. Uncheck Configured.
+```
+
+```sh
+5. Select Save Changes and Exit.
+```
 
 ***
 
