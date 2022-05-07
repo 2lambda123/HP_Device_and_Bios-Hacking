@@ -69,8 +69,22 @@ My first thought that appeared immediately was, if I short circuit the chip it w
 
 Sounds crazy? Maybe.. Not for me.. However, this repo will be updated frequently with all kind of HP Devices **AND** I will also include if I fail and what I failed at and what I did. I know there is alot of people that is interested in HP's security f these computers but on other platforms a GitHub.(Forums mostly)
 
-## Lets hack!
+# Hacking Secureboot (incomplete part)
 
+Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed allways since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
+
+I dont like those distros or windows so I will add how to fix this so we can boot gentoo minimal cd 
+
+mok + shim ... adding howto later
+
+![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
+![Screenshot](.secureboot.bypass/security_viaolation.jpg)
+![Screenshot](.secureboot.bypass/enroll_our_new_keys.jpg)
+![Screenshot](.secureboot.bypass/sha256hash.jpg)
+![Screenshot](.secureboot.bypass/mokmanagment.jpg)
+![Screenshot](.secureboot.bypass/createderfiles.jpg)
+
+## Lets hack!
 
 ### HP EliteDesk 800 G5/G2 (DANGEROUS METHOD)
 
@@ -129,11 +143,13 @@ This device has an extra option for bios password. It is possible to set securit
 
 * REMOVE THE BATTERY BEFORE DOING THIS!
 
-#### Holy maria! it does not even start!
+#### Fuck, now things was bricked! I thought
 
 ![Screenshot](.800.g5.pics/it_does_not_start.gif)
 
-#### Leaving AC out and pressing power button for 25 seconds, gave life to the computer, damn now it flashes red and beeps every time the led flashes! According to the HP dev manual for what 3 x beeps + 3 red flashing indicates its the CPU or GPU. What the hell? It should be 4.2 seconds before it breaks on cpu, mem, motherboard, bios or gpu! Fuck, now things was bricked! I thought:
+#### Leaving AC out and pressing power button for 25 seconds, gave life to the computer, damn now it flashes red and beeps every time the led flashes! According to the HP dev manual for what 3 x beeps + 3 red flashing indicates its the CPU or GPU. What the hell? It should be 4.2 seconds before it breaks on cpu, mem, motherboard, bios or gpu!
+
+#### Holy maria! it does not even start!
 
 ![Screenshot](.800.g5.pics/leds_blinking_red.gif)
 
