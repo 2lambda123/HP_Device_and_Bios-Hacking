@@ -59,6 +59,8 @@ Sounds crazy? Maybe.. Not for me.. However, this repo will be updated frequently
 
 ## Bypassing/Hacking Secureboot as a pro (to be updated)
 
+![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
+
 Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed always since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
 
 I dont like those distros or windows so I will add how to fix this so we can boot Gentoo Minimal CD:
@@ -210,7 +212,7 @@ Certificate:
 * Enroll your keys and enter password. Enjoy
 
 #### Just some pictures from boot for later 
-![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
+
 ![Screenshot](.secureboot.bypass/security_viaolation.jpg)
 ![Screenshot](.secureboot.bypass/sha256hash.jpg)
 ![Screenshot](.secureboot.bypass/createderfiles.jpg)
