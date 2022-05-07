@@ -1,4 +1,4 @@
-> ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" ways how things should be done. I do not recommend **anyone to use my methods if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. You have been warned, this text will be removed but this repo is FAR away from done. I have hacked those devices since years now and created shotgun tools for older bioses from HP (my first hack as kid was a compaq bios pw). I will add alot of stuff that is not known for the public during time + tools for manipulates data and tools that is used before the motherboards is programmed by manufaturer(HP)..  
+> ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" way how things should be done. I do not recommend **anyone to use my methods if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. You have been warned, this text will be removed but this repo is FAR away from done. I have hacked those devices since years now and created shotgun tools for older bioses from HP (my first hack as kid was a compaq bios pw). I will add alot of stuff that is not known for the public during time + tools for manipulates data and tools that is used before the motherboards is programmed by manufaturer(HP)..  
 
 <p align="center">
   <img src="https://i.imgur.com/haDz3G6.png" />
@@ -6,13 +6,9 @@
   <h3 align="center">---=== <i>Elitebook</i> - ThinClient - <i>EliteDesk</i> - PowerBook - Printers - BIOS  ===---</i></h3>
 </p>
 
-
-
 ***
-
-
 > ⚠ WARNING: USE EVERYTHING IN THIS REPO AT YOUR OWN RISK  
-> ⚠ WARNING: YOUR COMPUTER WILL BE BRICKED - THERE IS NO GUARANTEES !!.**  
+> ⚠ WARNING: YOUR COMPUTER WILL BE BRICKED - THERE IS NO GUARANTEES !!
 > the developer can never be held responsible for the actions of other users and I have warned you! 
 > If the computer is dead, you cant fix it without replacing the  the motherboard. The chip alone is not enough 
 
@@ -32,19 +28,25 @@ Please watch the video above to follow the story I will do overtime in this repo
 
 # HP's story:
 
+![Screenshot](https://japan.zdnet.com/storage/2021/06/10/ebe3e11946a47fef8f3d1ce7bc61978c/210610_hp_003.jpg)
+
 * "[What It Really Takes to Catch a Hacker | HP](https://www.youtube.com/watch?v=OiUPrio9eVY)"
 
 * "HP WOLF Security: The hacker is always on THE HUNT"
 
-* "THE WORLD'S MOST SECURE AND MANAGEABLE WORKDSTATIONS"
+* "THE WORLD'S MOST SECURE AND MANAGEABLE WORKDTATIONS"
 
-* "PPROTECT SENSITIVE DATA AND IP .- WITH HARDWARE-ENFORCED SECURITY"
+* "PROTECT SENSITIVE DATA AND IP, WITH HARDWARE-ENFORCED SECURITY"
 
-* "Sure Start Protects the Bios
+* "Sure Start Protects the Bios"
 
-* "-while in the case of WIPER of ransomware attacks or hadware attacks. Sure Recovery provices fast, effective recovery"
+* Wwhile in the case of WIPER of ransomware attacks or hadware attacks. Sure Recovery provices fast, effective recovery"
 
-....... it never ends, it's crazy! 
+* (Nice, I already knew you are creating ransomware ;)
+
+![Screenshot](https://www.securityopenlab.it/immagini/2021/05/hp-1.jpg)
+
+....... it never ends, it's crazy!...... Lets end here else I must quote 100 things they claim in ads since the new name.
 
 # wuseman story:
 
@@ -215,6 +217,35 @@ This device has an extra option for bios password. It is possible to set securit
 
 ![Screenshot](.800.g5.pics/reset_all_security_features.png)
 
+#### If you got problems with system recovery via F11 and bios gonna say there is a problem with manifest as: "error finding valid manifest" do as below (this problem was a mess with my Elitebook 870 G3 to figure out and solve: 
+
+![Screenshot](.800.g5.pics/c06425212.png)
+
+* **To avoid the issue:**
+* Do not initiate a Preboot network enabled feature when the computer is on low battery power.
+* Avoid pressing the power button.
+* Do not use the CTRL+ALT+DEL key combination to restart the computer while a download or upload is in progress.
+* To work around this issue, perform the following steps to reset the IPv4 configuration:
+
+```sh
+1. Power on the computer.
+
+```sh
+2. Press F3 to enter the 3rd Party Option ROM Management menu.
+```
+
+```sh
+3. Navigate to Network Device List -> MAC:xx:xx:xx:xx:xx:xx -> IPv4 Network Configuration.
+```
+
+```sh
+4. Uncheck Configured.
+```
+
+```sh
+5. Select Save Changes and Exit.
+```
+
 ***
 
 ## Help with password removal 
@@ -311,15 +342,15 @@ All commands can be found here:
 
 * [Developers Portal](https://developers.hp.com/hp-client-management/doc/firmware?language=es-un)
 
-## All Elitedesk / Elitebooks
+# All Elitedesk / Elitebooks (The Secure/Recommended way to erase bios password)
 
 This is how you should do it, the dangerous method is NOT something you should try. Follow this instead:
 
-## In Linux:
+## Linux:
 
-> **⚠ NOTICE! !!!!!!! READ + SAVE YOUR BIOS BEFORE YOU ERASING IT IN CASE SOMETHING GOES WRONG!!!!!!
+> ⚠ READ + SAVE YOUR BIOS BEFORE YOU ERASING IT IN CASE SOMETHING GOES WRONG
 
-#### Read the bios in Linux, flashrom will detect your chip and know its model by itself:
+#### Flashrom will detect your chip and know its model by itself:
 
 * Read Chip
 
@@ -356,10 +387,11 @@ flashrom -p ch341a_spi -w hacked_bios_file_with_no_pw.bin
 
 > ⚠  READ + SAVE YOUR BIOS BEFORE YOU ERASING IT IN CASE SOMETHING GOES WRONG!
 
-## In Windows
+## Windows
 
 Download NeoProgrammer v2.2.0.10 and put the clip on the chip, read bios for backup and then erase it, done!
 
+![Screenshot](.800.g5.pics/reading_chip.png)
 ![Screenshot](.800.g5.pics/neoprogrammer.png)
 
 
