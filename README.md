@@ -43,7 +43,7 @@ Please watch the video above to follow the story I will do overtime in this repo
 
 ![Screenshot](https://i.imgur.com/eDALA4S.png)
 
-#### If that's true..... We are more vulnerable then ever?
+#### If the bolded text is true ..... We are more vulnerable then ever?
 
 .. Then we should be we able to hack the Bios within seconds ....... is my first thought?
 
