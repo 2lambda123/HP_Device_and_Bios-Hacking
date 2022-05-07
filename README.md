@@ -61,7 +61,7 @@ Sounds crazy? Maybe.. Not for me.. However, this repo will be updated frequently
 
 Visit Rod Smiths wiki for get a deeper knowledge, its an awesome wiki imo and cover everything that is worth to know imo even for none refind users:
 
-[rEFInd](https://www.rodsbooks.com/refind/installing.html)
+![rEFInd](https://www.rodsbooks.com/refind/installing.html)
 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
 
