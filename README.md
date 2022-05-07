@@ -211,7 +211,7 @@ Certificate:
 
 * Enroll your keys and enter password. Enjoy
 
-#### Just some pictures from boot for later 
+#### Some pictures of things that failed / appeared when I played with this. There is no explanation but just sharing them for fun.
 
 ![Screenshot](.secureboot.bypass/security_viaolation.jpg)
 ![Screenshot](.secureboot.bypass/sha256hash.jpg)
