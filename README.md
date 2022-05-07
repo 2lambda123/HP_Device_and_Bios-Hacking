@@ -7,12 +7,12 @@
 </p>
 
 ***
-> ⚠ WARNING: USE EVERYTHING IN THIS REPO AT YOUR OWN RISK  
-> ⚠ WARNING: YOUR COMPUTER WILL BE BRICKED - THERE IS NO GUARANTEES !!
-> the developer can never be held responsible for the actions of other users and I have warned you! 
-> If the computer is dead, you cant fix it without replacing the  the motherboard. The chip alone is not enough 
 
-> This repo can contain illegal acts depending on the country you live in. It is strictly forbidden and it can end with high penalties such as imprisonment for fraudulent behavior. You are responsible for your own actions and you can never ever blame wuseman for your acts. **Manipulating** data of various things to deceive a third party by selling a computer where hardware figures are manipulated and false  warranty can be presented  is a very serious crime, in almost all countries.. I urge no one to commit crimes, I dedicate this repo to everyone as a non-profit hacker/cracker of software and hardware devices to show how you are deceived by advertising. 
+> ⚠ WARNING: YOUR COMPUTER WILL BE BRICKED - THERE IS NO GUARANTEES !!
+> The author/developer in this repo can never be held responsible for the actions of other users and I have warned you! 
+> If the computer is dead, you cant fix it without replacing the the motherboard. The chip alone is not enough. Call HP for assistance if you don't know how to solve it yourself, you may brick your warranty by follow this repo!
+
+> ⚠ DANGER: This repo can contain illegal acts depending on the country you live in. It is strictly forbidden and it can end with high penalties such as imprisonment for fraudulent behavior. You are responsible for your own actions and you can never ever blame wuseman for your acts. **Manipulating** data of various things to deceive a third party by selling a computer where hardware figures are manipulated and false  warranty can be presented  is a very serious crime, in almost all countries.. I urge no one to commit crimes, I dedicate this repo to everyone as a non-profit hacker/cracker of software and hardware devices to show how you are deceived by advertising. 
 
 ***
 
@@ -58,7 +58,7 @@ Sounds crazy? Maybe.. Not for me.. However, this repo will be updated frequently
 
 ## Bypassing/Hacking Secureboot as a pro (to be updated)
 
-Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed allways since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
+Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed always since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
 
 I dont like those distros or windows so I will add how to fix this so we can boot gentoo minimal cd 
 
@@ -285,11 +285,13 @@ Cheers!
 * How to get access to HP's private stuff that is public without they know it 
 ....and alot more, to'be continued!
 
-## SPM 
+## Repair SPM:
 
-#### For fix the SPM is not provisiong anymore see below:
+> This is only needed if you short circuited the bios, otherwise you can fix this in bios settings under security.
 
-If you short cuited the chip, it will be fucked output when you type: 
+#### For fix the SPM if its not possible to fix this from bios security settings, see below:
+
+If you short cuited the chip, the output from below command will be alot of wierd text and looks like a mess.
 
 ```sh
 Get-HPSecurePlatformState
@@ -306,7 +308,7 @@ EndorsementKeyMod : {0, 0, 0, 0...}
 SigningKeyMod     : {0, 0, 0, 0...}
 ```
 
-For fix this, please see below (it will works if your output is fucked too, i never saved the output but you will understand what I mean if you get there and typing the command above) - You also needs HP Sure Admin and HP Recovery from HP's download page (will add urls later, search on hp and you will find for now)
+For fix this, please see below (it will works if your output is messed up as well, i never saved the output but you will understand what I mean if you get there and typing the command above) - You also needs HP Sure Admin and HP Recovery from HP's download page (will add urls later, search on hp and you will find for now)
 
 ```sh
 openssl req -x509 -nodes -newkey rsa:2048 -keyout key.pem -out cert.pem -days 3650 -subj "/C=US/ST=State/L=City/O=Company/OU=Org/CN=www.example.com"
