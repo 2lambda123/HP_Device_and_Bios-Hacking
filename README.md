@@ -87,13 +87,13 @@ We need mokutil and shim, please dont do anything here if you dont know exactly 
      Description:         Fedora's signed UEFI shim
 ```
 
-* Installing shim and mokuti,, no useflags are available so we just installing them as usual, we also gonna install openssl since we need this for create keys and also ca-certificates
+#### Install shim and mokutil, no useflags are available so we just installing them as usual, you also gonna need openssl since we need this for create keys and also ca-certificates for the certs but they are probably already installed but if not:
 
 ```sh
 emerge -av sys-boot/mokutil sys-boot/shim app-misc/ca-certificates dev-lib/openssl
 ```
 
-* First, list all enrolled or new keys
+#### First, list all enrolled or new keys
 
 ```sh
 mokutil --list-enrolled
@@ -104,33 +104,32 @@ SHA1 Fingerprint:....
 SHA1 Fingerprint:....
 ```
 
-* List new keys
+#### List new keys
 
 ```sh
 mokutil --list-new
 ```
 
-* You can check the current secureboot state with:
+#### You can check the current secureboot state with:
 
 ```sh
 mokutil --sb-state
 ```
-
-* You want to export the current keys if there is any, of course ;)
+#### You want to export the current keys if there is any, of course ;)
 
 ```sh
 mokutil --export
 ```
 
-The above command will give you .der keys named: MOK-000X.der, save them in some encrypted container or at least secure place (security is always nr1, encrypt everything): 
+The above command will give you .der keys in the folder you execute the command, files is named: MOK-00**.der, save all those files in some encrypted container or at least secure place (security is always nr1, encrypt everything) before you deleting them and adding new ones!
 
-* You now want to delete the old keys, you can use wildcard for this part as below: 
+#### You now want to delete the old keys, you can use wildcard for this part as below: 
 
 ```sh
 mokutil --delete MOK*.der
 ```
 
-* If you want, set root password: 
+#### If you want, set root password: 
 ```sh
 sudo mokutil --root-pw
 ```
