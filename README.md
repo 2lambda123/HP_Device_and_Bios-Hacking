@@ -61,6 +61,8 @@ Sounds crazy? Maybe.. Not for me.. However, this repo will be updated frequently
 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
 
+#### Please move to next section for skip this step if you are not a user that doing your own setups from scratch and just wanna see the bypass of bios pw
+
 Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed always since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
 
 I dont like those distros or windows so I will add how to fix this so we can boot Gentoo Minimal CD:
