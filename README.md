@@ -521,7 +521,9 @@ So .. Short circuit trick is dangerous but I wanted to confirm this for Eliteboo
 
 #### WSON Bios Chip 
 
-* Winbond 25Q256JVEN 2111 6048 CZ900 - Tested my new microscope usb, not perfect photos but it was the first time I used it :P
+* 870 G3 chip is a Winbond 25Q256JVEN 2111 6048 CZ900 
+* Tested my new microscope usb, not perfect photos but it was the first time I used it :P
+
 ![Screenshot](.870.g3/20220131133624067.jpg)
 ![Screenshot](.870.g3/20220131133352413.jpg)
 ![Screenshot](.870.g3/chip4.jpg)
