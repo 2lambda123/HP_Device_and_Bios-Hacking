@@ -145,11 +145,11 @@ input password:
 input password again: 
 ```
 
-* Rebooted and answer the questions (comming soon more detailed) and see if the keys has been deleted ;) 
+#### Rebooted and answer the questions (comming soon more detailed) and see if the keys has been deleted ;) 
 
-* Enjoy the removal of the old keys! You Pwnz!
+#### **Enjoy the removal of the old keys! You are l33t!**
 
-#### Create your own keys/setup enrollment
+### Create your own keys/setup enrollment
 
 Verify that MOK is enabled. Use the following commands on the target to enable or disable MOK:
 ```sh
@@ -157,9 +157,9 @@ mokutil --enable-validation
 mokutil --disable-validation
 ```
 
-* You use this password to manage keys using mokutil and to confirm their enrollment and other operations when the MOK manager is running. In addition to console input, mokutil supports other methods to input the password.
+You use this password to manage keys using mokutil and to confirm their enrollment and other operations when the MOK manager is running. In addition to console input, mokutil supports other methods to input the password.
 
-#### Enroll a key certificate.
+### Enroll a key certificate.
 
 Convert a standard PEM key to a DER-formatted X509 certificate for shim_cert.cer and vendor_cert.cer.
 ```sh
@@ -167,14 +167,14 @@ openssl x509 -in shim_cert.crt -inform PEM -out shim_cert.cer -outform DER
 openssl x509 -in vendor_cert.crt  -inform PEM -out vendor_cert.cer  -outform DER
 ```
 
-#### Enroll the shim_cert.cer certificate.
+### Enroll the shim_cert.cer certificate.
 ```sh
 mokutil --import shim_cert.cer
 
 ```
-* You must set up the password for this MoK manipulation request, as this password is required by the shim loader in the next reboot.
+#### You must set up the password for this MoK manipulation request, as this password is required by the shim loader in the next reboot.
 
-#### Review the key enrollments.
+### Review the key enrollments.
 
 Use the following command to verify whether a key is active already or not:
 
@@ -185,7 +185,7 @@ mokutil --test-key shim_cert.cer
 ```sh
 mokutil --test-key vendor_cert.cer
 ```
-* Since the vendor_cert.cer key is the built-in certificate in the boot loader, is is enrolled during the first boot. Use the following command to list the current key enrollment requests:
+Since the vendor_cert.cer key is the built-in certificate in the boot loader, is is enrolled during the first boot. Use the following command to list the current key enrollment requests:
 
 ```sh
 mokutil --list-new
@@ -196,11 +196,13 @@ Certificate:
         Version: 3 (0x2)
         Serial Number:
 ```
-* Now Reboot the target.
+#### Now Reboot the target.
 
 ***
 
-* Once the target reboots, the Shim UEFI Key Management screen is displayed where you are given the following options:
+#### Once the target reboots, the Shim UEFI Key Management screen is displayed where you are given below options
+
+***
 
 * Press: Continue boot
 
