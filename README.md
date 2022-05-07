@@ -352,7 +352,7 @@ G5 has extra features then older elitebooks for bios password. It is possible to
 * You are a scam and fooling your customers with fabricated statistics! **Fuck you!**
 
 ***
-* If HP's bios is the most secure bios in the world that will protect the companies from hackers incl. tpm protections and keys that will keep the "bad guys" away then im so it's just as true that I'm sitting on the planet "Jupiter" and writing this, there are no laws and rules here so therefore I do not break any laws and rules here, ezi! .. Idiots ... 
+* If HP's bios is the most secure bios in the world that will protect the companies from hackers incl. tpm protections and keys and keep the real black hats away from private data then  it's just as true that I'm sitting on the planet "Jupiter" and writing this, there are no laws and rules here so therefore I do not break any laws and rules here, ezi! .. Idiots ... 
 
 ***
 
