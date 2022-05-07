@@ -522,15 +522,51 @@ All commands can be found here:
 
 * [Developers Portal](https://developers.hp.com/hp-client-management/doc/firmware?language=es-un)
 
-# Hacking Bios Password
+## Hacking Bios Password
 
-#### This is the The Secure/Recommended/Best way to erase the bios password by dump the current bios file, remove the password via prefered hexeditor, write the hacked dump without any password back to chip, voila - Done!  
 
-### This is how you should do it, the dangerous method is NOT something you should try. Follow this instead:
+## Via Linux:
 
-## Linux:
+Please visit flashrom for more info if you are a newbie, dont guess anything before you trying. If possible, try on something else that may not brick your PC before you trying on your real pc if you are new in this world:
 
-> ⚠ READ + SAVE YOUR BIOS BEFORE YOU ERASING IT IN CASE SOMETHING GOES WRONG
+Wel well, download flashrom (i prefer install things from the source and not via package manager with this kind of tools)
+
+#### Download flashrom and Signature
+wget https://download.flashrom.org/releases/flashrom-v1.2.tar.bz2
+wget https://download.flashrom.org/releases/flashrom-v1.2.tar.bz2.asc
+
+You should next verify that the key's full fingerprint matches that listed on the flashroms website:
+```sh
+gpg --verify ... you should know this
+awk '/SHA512 HASH/{getline;print}' flashrom-v1.2.tar.bz2.asc | sha512sum --check
+flashrom-v1.2.tar.bz2: OK
+flashrom-v1.2.tar.bz2.asc: OK
+```
+
+#### Extract flashrom
+
+```sh
+tar -xvf flashrom-v1.2.tar.bz2
+
+or if wanna skip the signature part, downaload and extract via stdin
+
+wget -c https://download.flashrom.org/releases/flashrom-v1.2.tar.bz2 -O - | sudo tar -xj
+```
+
+#### Install flashrom
+
+```sh
+cd flashrom-v1.2
+make -j$(nproc)
+```
+
+#### If there is no errors, move on with `make install` and now, use your programmer, see available programmers via typing flashrom only and you will get all available `programmers`
+
+Now lets continue
+
+This is the The Secure/Recommended/Best way to erase the bios password by dump the current bios file, remove the password via prefered hexeditor, write the hacked dump without any password back to chip, voila - Done! Well, its not that easy maybe but follow below steps and everything will be fine :) 
+
+## Windows:
 
 #### Flashrom will detect your chip and know its model by itself:
 
