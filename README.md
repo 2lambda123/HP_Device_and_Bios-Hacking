@@ -496,8 +496,9 @@ So .. Short circuit trick is dangerous but I wanted to confirm this for Eliteboo
 
 ![Screenshot](.870.g3/boot.sdi.jpg)
 
-#### Downloadint BCD
-![Screenshot](.870.g3/bcd)
+#### Downloadintg BCD 
+
+![Screenshot](.870.g3/bcd.jpg)
 
 
 #### Device that was hacked in 3.0 seconds and I confirmed the same shit works on this healing bios. But i don't recommending anyone to try, use the safe method otherwise you may get a broken cpu,gpu,mem,motherboard or anything:
