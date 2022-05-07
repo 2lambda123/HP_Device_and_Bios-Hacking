@@ -386,11 +386,15 @@ G5 as extra features then older elitebooks for bios password. It is possible to 
 
 ![Screenshot](.800.g5.pics/reset_all_security_features.png)
 
-#### If you got problems with system recovery via F11 and bios gonna say there is a problem with manifest as: "error finding valid manifest" do as below (this problem was a mess with my Elitebook 870 G3 to figure out and solve: 
+## Invalid Manifest
+
+If you got problems with system recovery via F11 and bios gonna say there is a problem with manifest as: "error finding valid manifest" do as below (this problem was a mess with my Elitebook 870 G3 to figure out and solve: 
 
 ![Screenshot](.800.g5.pics/c06425212.png)
 
-* **To avoid the issue:**
+
+#### To avoid the issue:**
+
 * Do not initiate a Preboot network enabled feature when the computer is on low battery power.
 * Avoid pressing the power button.
 * Do not use the CTRL+ALT+DEL key combination to restart the computer while a download or upload is in progress.
