@@ -515,6 +515,7 @@ So .. Short circuit trick is dangerous but I wanted to confirm this for Eliteboo
 
 
 #### Preparing HP Setup + Windows
+
 ![Screenshot](.870.g3/IMG_20220131_141511.jpg)
 
 
@@ -550,8 +551,29 @@ So .. Short circuit trick is dangerous but I wanted to confirm this for Eliteboo
 
 Enjoy!
 
+## Elitebook 820 - Programmer required!
+
+The Short CIRCUIT will NOT work on this device!!! Use your programmer to dump bios and remove the password with prefered hexedit tool
+and write it back to device without the  the bios password, its now fully unlocked! =D
+
+My modded custom clip grabbed this one aswell, you must have the pins outside the clip as on my picture the above for being able to touch the solder from the pins on the board since there is no legs, if you using a default clip it will just grab the black area and it will probably and like the picture below. See the zoomed version what happens with a non-modded / wson clipper (this is for avaoid soldering, that´s  boring rly)
 
 
+
+![Screenshot](.820.g3/custom_clip_on_wson.jpg)
+
+![Screenshot](.820.g3/impoissble.png)
+
+.. If you get your clip working, there is better and more serious custom made SOP WSON SOIC VSOP SPI FLASH 8P 1.27mm on stores online, below is the modded ones from stores. Normal price on amazon is ~100-300$ but some stores in asia sell them for ~40$ - I would recommend a such one instead, its rly cool works on ALL 4x2 chips and you wont need solder anymore, connect it to your programmer or ardunio and start hack the bios dump.. 
+ 
+![Screenshot](.820.g3/1.jpg)
+![Screenshot](.820.g3/2.jpg)
+![Screenshot](.820.g3/3.jpg)
+
+I have nothing more to add here, programmer required here and if you short circuit this and think you will succeed, I can promise you, you wont! Already failed on ~2 few years ago and no new bios has been released so just buy a programmer and do it the proper way, but if you really wanna try - Go for it, i don't care and don't ask me for help about this model. Its old and and sucks! 
+
+
+Cheers
 
 
 ## Repair SPM:
