@@ -1,6 +1,6 @@
 
 
-> ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" ways how things should be done. I do not recommend **anyone to use my methods if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. You have been warned, this text will be removed but this repo is FAR away from done. I have hacked those devices since years now and created shotgun tools for older bioses from HP (my first hack as kid was a compaq bios pw). I will add alot of stuff that is not known for the public during time + tools for manipulates data and tools that is used before the motherboards is programmed by manufaturer(HP)..  
+> ⚠ IMPORTANT: This repo is updated daily, things can be removed / changed anytime - This text will be gone when I got things sorted and misspellings and other small things will be corrected during time, At bottom you will find the "proper" way how things should be done. I do not recommend **anyone to use my methods if you do not know exactly what you are doing**! I really mean what I say, your computer will probably die and never be able to start again. You have been warned, this text will be removed but this repo is FAR away from done. I have hacked those devices since years now and created shotgun tools for older bioses from HP (my first hack as kid was a compaq bios pw). I will add alot of stuff that is not known for the public during time + tools for manipulates data and tools that is used before the motherboards is programmed by manufaturer(HP)..  
 
 <p align="center">
   <img src="https://i.imgur.com/haDz3G6.png" />
@@ -311,15 +311,15 @@ All commands can be found here:
 
 * [Developers Portal](https://developers.hp.com/hp-client-management/doc/firmware?language=es-un)
 
-## All Elitedesk / Elitebooks
+# All Elitedesk / Elitebooks (The Secure/Recommended way to erase bios password)
 
 This is how you should do it, the dangerous method is NOT something you should try. Follow this instead:
 
-## In Linux:
+## Linux:
 
-> **⚠ NOTICE! !!!!!!! READ + SAVE YOUR BIOS BEFORE YOU ERASING IT IN CASE SOMETHING GOES WRONG!!!!!!
+> ⚠ READ + SAVE YOUR BIOS BEFORE YOU ERASING IT IN CASE SOMETHING GOES WRONG
 
-#### Read the bios in Linux, flashrom will detect your chip and know its model by itself:
+#### Flashrom will detect your chip and know its model by itself:
 
 * Read Chip
 
@@ -356,10 +356,11 @@ flashrom -p ch341a_spi -w hacked_bios_file_with_no_pw.bin
 
 > ⚠  READ + SAVE YOUR BIOS BEFORE YOU ERASING IT IN CASE SOMETHING GOES WRONG!
 
-## In Windows
+## Windows
 
 Download NeoProgrammer v2.2.0.10 and put the clip on the chip, read bios for backup and then erase it, done!
 
+![Screenshot](.800.g5.pics/reading_chip.png)
 ![Screenshot](.800.g5.pics/neoprogrammer.png)
 
 
