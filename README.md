@@ -43,11 +43,11 @@ Please watch the video above to follow the story I will do overtime in this repo
 
 ![Screenshot](https://i.imgur.com/eDALA4S.png)
 
-#### If the bolded text is true ..... We are more vulnerable then ever?
+#### If the bolded text is true ..... We are more vulnerable then ever? 
 
 .. Then we should be we able to hack the Bios within seconds ....... is my first thought?
 
-They laught at me because i'm different. I laught at them becuase they all are the same with economic interests.
+"They laught at me because i'm different. I laught at them becuase they all are the same with economic interests." / Edited quote, from Joker!
 
 HP: My first bios I managed to hack was from Compaq and since that day when I was 6 years old I have followed your developers for over 30 years now. We do not have to guess, we know how good your employees are from asia with extremely small salaries while you pull in billions on misleading and false advertising. Who are the "bad guys" in your ads? We'll see. This repo will be updated frequently and recurring as you develop your security. 
 
