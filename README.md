@@ -65,7 +65,7 @@ https://www.rodsbooks.com/refind/installing.html
 
 ![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
 
-#### Please move to next section for skip this step, this is kinda advanced and hi-tech for the regular user and if you are not using Gentoo or some other minimal cd you can skip this part for sure:
+## This part is for Gentoo Users - Scroll down to skip this 
 
 Before you will try anything I wanna tell you that you are able to bypass the secure boot protection if you have some linux skills. Windows setups can be installed always since the certs are from microsoft, ubuntu and kubuntu I know have preinstalled shim installed.
 
