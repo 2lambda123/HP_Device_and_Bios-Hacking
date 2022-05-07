@@ -524,7 +524,7 @@ All commands can be found here:
 
 # Hacking Bios Password
 
-## This is the tThe Secure/Recommended way to erase the bios password by dump the current bios file, remove the password via prefered hexeditor, write the hacked dump without any password back to chip, voila - Done!  
+#### This is the The Secure/Recommended/Best way to erase the bios password by dump the current bios file, remove the password via prefered hexeditor, write the hacked dump without any password back to chip, voila - Done!  
 
 ### This is how you should do it, the dangerous method is NOT something you should try. Follow this instead:
 
