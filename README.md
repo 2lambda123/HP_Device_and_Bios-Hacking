@@ -150,9 +150,9 @@ mokutil --enable-validation
 mokutil --disable-validation
 ```
 
-* You use this password to manage keys using mokutil and to confirm their enrollment and other operations when the MOK manager is running. In addition to console input, mokutil supports other methods to input the password. Please see the --hash-file, --root-pw, and --simple-hash options in the man page.
+* You use this password to manage keys using mokutil and to confirm their enrollment and other operations when the MOK manager is running. In addition to console input, mokutil supports other methods to input the password.
 
-* Enroll a key certificate.
+#### Enroll a key certificate.
 
 Convert a standard PEM key to a DER-formatted X509 certificate for shim_cert.cer and vendor_cert.cer.
 ```sh
