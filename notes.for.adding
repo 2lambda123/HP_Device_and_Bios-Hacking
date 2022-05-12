@@ -4,3 +4,53 @@ boot.sdi
 \efi\bootx64.efi 
 \efi\boot\microsoft\bcd 
 \sources\boot.wim
+
+
+
+C:\SWSetup\SP107705222>BiosConfigUtility64.exe
+
+HP BIOS Configuration Utility 4.0.32.1
+(C) Copyright 2005-2016 HP Development Company, L.P.
+Usage:
+
+BiosConfigUtility {option}
+
+ /get:"filename"        Saves the system BIOS settings to the given file.
+                        If filename is not provided, output is to console.
+ /set:"filename"        Applies system BIOS setting changes from the provided
+                        configuration file.
+ /verbose               (With Set) Display details about each setting such as
+                        failure code and reason.
+ /warningaserr          (With Set) Any settings skipped due to warnings
+                        will cause return error code 13.
+ /setdefaults           Sets BIOS settings to their default values.
+ /cpwdfile:"filename"   Specifies a file with the current BIOS Setup Password.
+                        Use HPQPswd.exe to create the password file.
+ /npwdfile:"filename"   Specifies a file with a new password to set.
+                        To remove the password, use /nspwdfile:"".
+                        Use HPQPswd.exe to create the password file.
+ /getvalue:"setting"    Retrieves and displays the value of the given setting.
+ /setvalue:"setting","value"
+                        Applies the new value to the given setting.
+ /unicode               Checks for Unicode password support and exits with
+                        return code.
+ /l or /log             Generates log files in Logs subfolder.
+ /logpath:"file path"   Saves the logs to the given file path
+ /? or /help            Displays this help message.
+
+/ot:value               Provide OneTime Value
+/ar:value               Provide AntiReplay Value
+/uid:value              Provide MachineID Value
+/pkey:"*.pfx"           Provide a private key string
+/pkeypwd:password       Password to private key
+
+/addauthstr             Generate auth string to addauthstr.txt
+
+
+C:\SWSetup\SP107705222>BiosConfigUtility64.exe /get:"current_bios.txt"
+<BIOSCONFIG Version="" Computername="DESKTOP-" Date="2022/05/12" Time="05:27:37" UTC="2">
+        <SUCCESS msg="No errors occurred" />
+        <Information msg="BCU return value" real="0" translated="0" />
+</BIOSCONFIG>
+
+C:\SWSetup\SP107705222>
