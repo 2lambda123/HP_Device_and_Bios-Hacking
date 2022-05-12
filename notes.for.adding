@@ -1,0 +1,6 @@
+recovery.mft 
+recovery.sig 
+boot.sdi 
+\efi\bootx64.efi 
+\efi\boot\microsoft\bcd 
+\sources\boot.wim
