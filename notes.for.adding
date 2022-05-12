@@ -5,6 +5,24 @@ boot.sdi
 \efi\boot\microsoft\bcd 
 \sources\boot.wim
 
+## Will create a txt file with serial bumber as
+
+     BIOSConfig 1.0
+     ;
+     ;     Originally created by BIOS Configuration Utility
+     ;     Version: 4.0.32.1
+     ;     Date="2022/05/12" Time="05:30:47" UTC="2"
+     ;
+     Serial Number
+     wusemanhackedthiserial
+     06:49 12/05/2022
+
+C:\SWSetup\SP107705222>BiosConfigUtility64.exe /get:"serial_number"
+<BIOSCONFIG Version="" Computername="DESKTOP-BS" Date="2022/05/12" Time="06:49:12" UTC="2">
+        <SUCCESS msg="No errors occurred" />
+        <Information msg="BCU return value" real="0" translated="0" />
+</BIOSCONFIG>
+
 
 
 C:\SWSetup\SP107705222>BiosConfigUtility64.exe
