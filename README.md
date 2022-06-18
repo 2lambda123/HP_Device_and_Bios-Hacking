@@ -323,10 +323,6 @@ G5 has extra features then older elitebooks for bios password. It is possible to
 
 ![bios_part2](https://user-images.githubusercontent.com/26827453/174450712-dd169030-e04c-4ee7-9c65-1c630454abf2.jpg)
 
-### Now the below message popups, what will this result in
-
-![Screenshot](.800.g5.pics/and_secure_boot_keys_seems_gone.jpg)
-
 ### Next screen takes us to to gbe recovery (will it never ends?)
 
 ![network_gbe_upgrade_getting_started](https://user-images.githubusercontent.com/26827453/174450728-50e67d51-9852-4b03-b80e-b936863c593d.jpg)
@@ -545,11 +541,9 @@ and write it back to device without the  the bios password, its now fully unlock
 
 My modded custom clip grabbed this one aswell, you must have the pins outside the clip as on my picture the above for being able to touch the solder from the pins on the board since there is no legs, if you using a default clip it will just grab the black area and it will probably end like the picture below. See the zoomed version what happens with a non-modded / wson clipper (this is for avaoid soldering, that´s  boring rly)
 
+![custom_clip_on_wson](https://user-images.githubusercontent.com/26827453/174451038-1c57051d-5d97-4b5d-92c2-230da18e258a.jpg)
 
-
-![Screenshot](.820.g3/custom_clip_on_wson.jpg)
-
-![Screenshot](.820.g3/impoissble.png)
+![impoissble](https://user-images.githubusercontent.com/26827453/174451040-3883df6c-467d-4587-80cf-416dddeefb7b.png)
 
 .. If you get your clip working, there is better and more serious custom made SOP WSON SOIC VSOP SPI FLASH 8P 1.27mm on stores online, below is the modded ones from stores. Normal price on amazon is ~100-300$ but some stores in asia sell them for ~40$ - I would recommend a such one instead, its rly cool works on ALL 4x2 chips and you wont need solder anymore, connect it to your programmer or ardunio and start hack the bios dump.. 
  
