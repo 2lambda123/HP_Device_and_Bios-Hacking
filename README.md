@@ -18,7 +18,7 @@
 
 <blockquote>
 
-###### [Video Introduction for Wolf Security: A New Breed of Endpoint Security | Security | HP ](https://www.youtube.com/watch?v=KOq4LutcLr0)
+### [Video Introduction for Wolf Security: A New Breed of Endpoint Security | Security | HP ](https://www.youtube.com/watch?v=KOq4LutcLr0)
 
 Please watch the video above to follow the story I will do overtime in this repo 
   
@@ -26,7 +26,7 @@ Please watch the video above to follow the story I will do overtime in this repo
 
 </blockquote>
 
-# HP's story:
+## HP's story:
 
 * "[What It Really Takes to Catch a Hacker | HP](https://www.youtube.com/watch?v=OiUPrio9eVY)"
 * "HP WOLF Security: The hacker is always on THE HUNT"
@@ -37,13 +37,13 @@ Please watch the video above to follow the story I will do overtime in this repo
 
 ....... it never ends, it's crazy they talk so much and provide 0 proofs, 0!!!...... 
 
-# wuseman story:
+## wuseman story:
 
 > My banner is from by HP and the hoodie guy is what HP refers to the "bad guys" and they are the wolves ..
 
 ![Screenshot](https://i.imgur.com/eDALA4S.png)
 
-#### If the bolded text is true ..... We are more vulnerable then ever? 
+### If the bolded text is true ..... We are more vulnerable then ever? 
 
 .. Then we should be we able to hack the Bios within seconds ....... is my first thought?
 
@@ -63,7 +63,7 @@ Visit Rod Smiths wiki for get a deeper knowledge, its an awesome wiki imo and co
 
 https://www.rodsbooks.com/refind/installing.html
 
-![Screenshot](.secureboot.bypass/securebootauthrequired.jpg)
+![securebootauthrequired](https://user-images.githubusercontent.com/26827453/174450636-801f3c80-20d6-4809-8478-4375c436be39.jpg)
 
 ## This part is for Gentoo Users - Scroll down to skip this 
 
@@ -87,13 +87,13 @@ This will fix this so we can boot Gentoo Minimal CD because with secureboot enab
      Description:         Fedora's signed UEFI shim
 ```
 
-#### Install shim and mokutil, no useflags are available so we just installing them as usual, you also gonna need openssl since we need this for create keys and also ca-certificates for the certs but they are probably already installed but if not:
+### Install shim and mokutil, no useflags are available so we just installing them as usual, you also gonna need openssl since we need this for create keys and also ca-certificates for the certs but they are probably already installed but if not:
 
 ```sh
 emerge -av sys-boot/mokutil sys-boot/shim app-misc/ca-certificates dev-lib/openssl
 ```
 
-#### First, list all enrolled or new keys
+### First, list all enrolled or new keys
 
 ```sh
 mokutil --list-enrolled
@@ -104,18 +104,18 @@ SHA1 Fingerprint:....
 SHA1 Fingerprint:....
 ```
 
-#### List new keys
+### List new keys
 
 ```sh
 mokutil --list-new
 ```
 
-#### You can check the current secureboot state with:
+### You can check the current secureboot state with:
 
 ```sh
 mokutil --sb-state
 ```
-#### You want to export the current keys if there is any, of course ;)
+### You want to export the current keys if there is any, of course ;)
 
 ```sh
 mokutil --export
@@ -123,13 +123,13 @@ mokutil --export
 
 The above command will give you .der keys in the folder you execute the command, files is named: MOK-00**.der, save all those files in some encrypted container or at least secure place (security is always nr1, encrypt everything) before you deleting them and adding new ones!
 
-#### You now want to delete the old keys, you can use wildcard for this part as below: 
+### You now want to delete the old keys, you can use wildcard for this part as below: 
 
 ```sh
 mokutil --delete MOK*.der
 ```
 
-#### If you want, set root password: 
+### If you want, set root password: 
 ```sh
 sudo mokutil --root-pw
 ```
@@ -168,7 +168,7 @@ openssl x509 -in vendor_cert.crt  -inform PEM -out vendor_cert.cer  -outform DER
 mokutil --import shim_cert.cer
 
 ```
-#### You must set up the password for this MoK manipulation request, as this password is required by the shim loader in the next reboot.
+### You must set up the password for this MoK manipulation request, as this password is required by the shim loader in the next reboot.
 
 ### Review the key enrollments.
 
@@ -192,11 +192,11 @@ Certificate:
         Version: 3 (0x2)
         Serial Number:
 ```
-#### Now Reboot the target.
+### Now Reboot the target.
 
 ***
 
-#### Once the target reboots, the Shim UEFI Key Management screen is displayed where you are given below options
+### Once the target reboots, the Shim UEFI Key Management screen is displayed where you are given below options
 
 ***
 
@@ -204,21 +204,22 @@ Certificate:
 
 
 * Press: Enroll MOK, choose yes!
+* 
+![enroll_our_new_keys](https://user-images.githubusercontent.com/26827453/174450638-f1f15251-a47f-4cf1-8a04-ee5714dd6358.jpg)
 
-![Screenshot](.secureboot.bypass/enroll_our_new_keys.jpg)
 
 * Enroll key from disk
 * Enroll hash from disk
 
-![Screenshot](.secureboot.bypass/mokmanagment.jpg)
+![mokmanagment](https://user-images.githubusercontent.com/26827453/174450642-3b4397de-f6de-4074-9945-04bcc63c0029.jpg)
 
 * Enroll your keys and enter password. Enjoy
 
-#### Some pictures of things that failed / appeared when I played with this. There is no explanation but just sharing them for fun.
+### Some pictures of things that failed / appeared when I played with this. There is no explanation but just sharing them for fun.
 
-![Screenshot](.secureboot.bypass/security_viaolation.jpg)
-![Screenshot](.secureboot.bypass/sha256hash.jpg)
-![Screenshot](.secureboot.bypass/createderfiles.jpg)
+![security_viaolation](https://user-images.githubusercontent.com/26827453/174450646-9758006c-8ccf-444f-8266-fa970fa45bc0.jpg)
+![sha256hash](https://user-images.githubusercontent.com/26827453/174450649-577c386e-08f6-40e5-90c5-12dbb5f8d83b.jpg)
+![createderfiles](https://user-images.githubusercontent.com/26827453/174450650-4708dcd0-7757-4bbe-8f8b-dce63ae75df8.jpg)
 
 ***
 
@@ -260,10 +261,10 @@ Level of difficulty.........: `simple`
 
 G5 has extra features then older elitebooks for bios password. It is possible to set security settings to "Ignore" the cmos jumper and reset reset button if pressed on motherboard. If the setting is set to IGNORE you are fucked, you will NOT not succeed in getting around without programmers. so if you try on this unit and do not understand why it does not work, it is precisely because it can ignore this that many other Elitedesk can NOT.
 
-#### The clip is easy to find, its under the below nvme disk (if you have two) and you can read the chip via a Soic Clip 8
+### The clip is easy to find, its under the below nvme disk (if you have two) and you can read the chip via a Soic Clip 8
 
-![Screenshot](.800.g5.pics/nvme.slot2.jpg)
-![Screenshot](.800.g5.pics/clip_chip.jpg)
+![nvme slot2](https://user-images.githubusercontent.com/26827453/174450658-fae959b2-ee8a-4011-ab28-9bbbf011bab9.jpg)
+![clip_chip](https://user-images.githubusercontent.com/26827453/174450661-536f8994-e3ee-4292-9761-0ea87b4d4e45.jpg)
 
 > THIS WILL BRICK YOUR PC - DO IT ON YOUR OWN RISK!! 
 > PLEASE NOTICE THE LEGS 1, 7, 8 are from my PICTURE, NOT FROM THE DATASHEET!!!
@@ -274,71 +275,71 @@ G5 has extra features then older elitebooks for bios password. It is possible to
 
 *  A wire on leg  1 and 8 for ~3.0s erased Bios Password 
 
-#### Pins
+### Pins
 
-![Screenshot](.800.g5.pics/pins.jpg)
+![pins](https://user-images.githubusercontent.com/26827453/174450667-b98250c9-1d28-4d43-bf94-b55cb2ed9a00.jpg)
 
-#### Impressive, I was wrong about all this, well well. After 1 touch on pin 1 and 8 (notice just a touch like in 0.1ms) we gonna see below
+### Impressive, I was wrong about all this, well well. After 1 touch on pin 1 and 8 (notice just a touch like in 0.1ms) we gonna see below
 
-![Screenshot](.800.g5.pics/1s_is_not_enough.png)
+![1s_is_not_enough](https://user-images.githubusercontent.com/26827453/174450675-fc4798b0-045f-4e48-9d82-0cf66b9225ff.png)
+
 
 * I still don't trust their shit so before I saying I was wrong and they won, I try 2. seconds!
 * Since ages back in the days for some reason I know 4.2 seconds will brick the device if we touch the pins. And this is something I just has figured out on many devices, I can't confirm or promise it will work the same for you so dont listen on this if you didnt try and then cry in pm to me
 
 * I tried to hold a wire on leg 1 and leg 8, now things happens! Bios missmatch! Now its dangerous, and I'm not as impressed anymore. One more wrong and things will be bricked, Now it's 50/50 .. HP or wuseman, who's right? It will not be a fourth time I know from past experience.
+![bios_missmatch](https://user-images.githubusercontent.com/26827453/174450685-4fce9deb-9fc1-4514-bc9d-7690aff7921e.jpg)
 
-![Screenshot](.800.g5.pics/bios_missmatch.jpg)
-
-#### Fuck it, i´m to curios and since ages i know 4.2 seconds is the limit for break things as I said so I decided to try: 3.0 seconds while PC was ON running as normal....
-#### after 3.0s I pull the AC and keep it off for 25 seconds.. The PC wont die itself so you must pull the AC
+### Fuck it, i´m to curios and since ages i know 4.2 seconds is the limit for break things as I said so I decided to try: 3.0 seconds while PC was ON running as normal....
+### after 3.0s I pull the AC and keep it off for 25 seconds.. The PC wont die itself so you must pull the AC
 
 * REMOVE THE BATTERY BEFORE DOING THIS!
 
-#### Holy maria! it does not even start!
+### Holy maria! it does not even start!
 
-![Screenshot](.800.g5.pics/it_does_not_start.gif)
+![it_does_not_start](https://user-images.githubusercontent.com/26827453/174450693-e79397e7-7952-47a6-b82f-736473fba07d.gif)
 
-#### Leaving AC out and pressing power button for 25 seconds, gave life to the computer, damn now it flashes red and beeps every time the led flashes! According to the HP dev manual for what 3 x beeps + 3 red flashing indicates its the CPU or GPU. What the hell? It should be 4.2 seconds before it breaks on cpu, mem, motherboard, bios or gpu!
+### Leaving AC out and pressing power button for 25 seconds, gave life to the computer, damn now it flashes red and beeps every time the led flashes! According to the HP dev manual for what 3 x beeps + 3 red flashing indicates its the CPU or GPU. What the hell? It should be 4.2 seconds before it breaks on cpu, mem, motherboard, bios or gpu!
 
-#### Fuck, now things was bricked! I thought
+### Fuck, now things was bricked! I thought
+
 ![Screenshot](.800.g5.pics/leds_blinking_red.gif)
 
-#### ...After device is blinking red and fan had run at 10k rpm few times we finally have device booting, THUMBS UP! HP's manuals sucks! ;-)
+### ...After device is blinking red and fan had run at 10k rpm few times we finally have device booting, THUMBS UP! HP's manuals sucks! ;-)
 
-![Press Me For Video](.800.g5.pics/fan_run_at_max.gif)
+![fan_run_at_max](https://user-images.githubusercontent.com/26827453/174450701-855e2c0f-2bc1-4362-935e-863d5bfcd7f2.gif)
 
-#### First screen we gonna see is that date is wrong, i didnt fix a picture on this. just press continue
+### First screen we gonna see is that date is wrong, i didnt fix a picture on this. just press continue
 
-#### Second screen we gonna see is that intel firmware is fucked, press ok
+### Second screen we gonna see is that intel firmware is fucked, press ok
 
-![Screenshot](.800.g5.pics/intelfirmfucked.jpg)
+![intelfirmfucked](https://user-images.githubusercontent.com/26827453/174450704-c505bca0-6704-47f5-a2c0-16e62e36097b.jpg)
 
-#### Intel firmware install is in progress
+### Intel firmware install is in progress
 
-![Screenshot](.800.g5.pics/intel_firmware_running.jpg)
+![intel_firmware_running](https://user-images.githubusercontent.com/26827453/174450708-3f8f6179-eb9c-4d4f-96e4-79602b297b38.jpg)
 
-#### Device reboots after a while and reading bios up to 16M will start and finally you will see the below screen.
+### Device reboots after a while and reading bios up to 16M will start and finally you will see the below screen.
 
-![Screenshot](.800.g5.pics/bios_part2.jpg)
+![bios_part2](https://user-images.githubusercontent.com/26827453/174450712-dd169030-e04c-4ee7-9c65-1c630454abf2.jpg)
 
-#### Now the below message popups, what will this result in
+### Now the below message popups, what will this result in
 
 ![Screenshot](.800.g5.pics/and_secure_boot_keys_seems_gone.jpg)
 
-#### Next screen takes us to to gbe recovery (will it never ends?)
+### Next screen takes us to to gbe recovery (will it never ends?)
 
-![Screenshot](.800.g5.pics/network_gbe_upgrade_getting_started.jpg)
+![network_gbe_upgrade_getting_started](https://user-images.githubusercontent.com/26827453/174450728-50e67d51-9852-4b03-b80e-b936863c593d.jpg)
 
-#### Now it want us to upgrade once again, i choose yes
+### Now it want us to upgrade once again, i choose yes
 
-![Screenshot](.800.g5.pics/import_update.jpg)
+![import_update](https://user-images.githubusercontent.com/26827453/174450732-f3f8f163-7ee0-42c1-b74c-583d07178665.jpg)
 
-#### After the shortcuit and few reboot, it was time to enter bios and see if its password protects!! IT IS GONE!
+### After the shortcuit and few reboot, it was time to enter bios and see if its password protects!! IT IS GONE!
 
-![Screenshot](.800.g5.pics/bios_removed_lol.jpg)
+![bios_removed_lol](https://user-images.githubusercontent.com/26827453/174450736-f56a7435-5a3d-4c52-a35b-7a85324d93fa.jpg)
 
-#### Now, feel free to set your own bios password and then press F11 and choose network recovery
-
+### Now, feel free to set your own bios password and then press F11 and choose network recovery
 
 * Worlds most secured BIOS that has hardware protection was "hacked" in ~3.0 second! We are now able to take over windows also! (will be added later) 
 * The only question I have to HP is, did you never try this? 
@@ -356,36 +357,34 @@ G5 has extra features then older elitebooks for bios password. It is possible to
 
 ## General info about Elitedesks!
 
-#### There is another switch on the motherboard, its not easy to find and the switch is not available wiht chassi closed:
+### There is another switch on the motherboard, its not easy to find and the switch is not available wiht chassi closed
 
-![Screenshot](.800.g5.pics/hidden_button.jpg)
-![Screenshot](.800.g5.pics/switch2.jpg)
+![hidden_button](https://user-images.githubusercontent.com/26827453/174450744-cd83a0c3-7b20-4b02-9851-a57581b041d4.jpg)
+![switch2](https://user-images.githubusercontent.com/26827453/174450748-bc6452ab-8071-4d4b-9de9-c5d07e93df15.jpg)
 
-#### I Really recommends to use a ´better clip then the cheap ones, spend some money for a 3M clip ~20-30€, the chip black ones from china sucks as hell! After 2-3 grabs it's not possible to grab the clip anymore. (probably thats why they sell those clips in 4-6xPackets on amazon - DONT BUY THOSE!!! >See yourself below after FEW grabs, it destroys the chip after few times)
+### I Really recommends to use a ´better clip then the cheap ones, spend some money for a 3M clip ~20-30€, the chip black ones from china sucks as hell! After 2-3 grabs it's not possible to grab the clip anymore. (probably thats why they sell those clips in 4-6xPackets on amazon - DONT BUY THOSE!!! >See yourself below after FEW grabs, it destroys the chip after few times)
 
-![Screenshot](.800.g5.pics/soic8_did_this.jpg)
+![soic8_did_this](https://user-images.githubusercontent.com/26827453/174450763-af915af7-784e-4780-8668-32f91649aa3f.jpg)
 
-#### HP Sure Adminm / Hp Sure Run and Secure PLatform Management is not provisioned anymore
+### HP Sure Adminm / HP Sure Run and Secure PLatform Management is not provisioned anymore
 
-![Screenshot](.800.g5.pics/spm_not_prov.jpg)
+![spm_not_prov](https://user-images.githubusercontent.com/26827453/174450757-c56fb05e-048c-42f8-bdc4-178f76b8c1fd.jpg)
 
+### You are now the full admin of the system and you can erase old TPM and take over this part
 
-#### You are now the full admin of the system and you can erase old TPM and take over this part
+![tpm_cleared](https://user-images.githubusercontent.com/26827453/174450766-8b4ec8f6-962c-49e2-8f4b-cf5de14a0be5.jpg)
 
-![Screenshot](.800.g5.pics/tpm_cleared.jpg)
+### Followed by reset all security featrures, not eve theft protection will help the owner, we can permanent disable this (permanent is not permanent as forever, we can rewrite the chip ofc)
 
-#### Followed by reset all security featrures, not eve theft protection will help the owner, we can permanent disable this (permanent is not permanent as forever, we can rewrite the chip ofc)
-
-![Screenshot](.800.g5.pics/reset_all_security_features.png)
+![reset_all_security_features](https://user-images.githubusercontent.com/26827453/174450772-15d71a79-4eb7-44ef-ba5f-e053e11d0347.png)
 
 ## Invalid Manifest
 
 If you got problems with system recovery via F11 and bios gonna say there is a problem with manifest as: "error finding valid manifest" do as below (this problem was a mess with my Elitebook 870 G3 to figure out and solve, hp now have a help part for this for several models on their site, not all devices are affected - Visit hp for more info if needed)
 
-![Screenshot](.800.g5.pics/c06425212.png)
+![c06425212](https://user-images.githubusercontent.com/26827453/174450775-95cdda85-2478-4666-b0c2-9a2691b3f3a1.png)
 
-
-#### To avoid the issue:**
+### To avoid the issue:**
 
 * Do not initiate a Preboot network enabled feature when the computer is on low battery power.
 * Avoid pressing the power button.
@@ -456,7 +455,7 @@ Turn off PC, while you holding win+b press power button for 2 seconds, release t
 
 Bios upgrade should now start. 
 
-![Screenshot](.800.g5.pics/manually_update_via_liunx.jpg)
+![manually_update_via_linux](https://user-images.githubusercontent.com/26827453/174450780-b50cf107-189a-4dc3-aaec-4b404a3f7e55.jpg)
 
 Happy Upgrading!
 
@@ -469,80 +468,75 @@ I wont add all pictures again, i will show you the really needed pictures otherw
 So .. Short circuit trick is dangerous but I wanted to confirm this for Elitebooks also.. It's no coincidence, it's wuseman power.. nah is not, its because HP fucking sucks! I guess they spent billions of dollars in their ads and their bios is hacking by short cuiiting their bios chip and then we dont even need to fix it, it healing itself! This has to be the dumbest thing I've ever been through. As I said, it also works on elitebook! Same legs from my view, same seconds (3.0seconds) on a different chip, i toke some picture on it with my microscope. See below, no descriptions will be added unless its something I really wanna share since its the same story as above dangerous method. there is fucking expensive clips for WSON chips for ~100-300$, these. If you are careful enough, you can do the same as me, otherwise you have to take the heat gun and solder and stuff.
 
 
-
-
-#### Same as above but on the elitebook i was able to take a picture, this is how it looks after we boots first time when device has been acting as the elitedesk
+### Same as above but on the elitebook i was able to take a picture, this is how it looks after we boots first time when device has been acting as the elitedesk
 
 * Didnt start
 * Caps lock led + numlock led was flashing 7 times ( i will add a video later i cant find it now )
 * fan runs at 10k rpm or something, rebooting and doing this for few times and we now got into this screen:
 
-![Screenshot](.870.g3/timeisinvalid.jpg)
-#### This never happened on elitedesks only on elitebook, I guess thats cause the software and efi can't communicate anymore since the bios was erased and now healed 
-![Screenshot](.870.g3/nosystem.jpg)
+![timeisinvalid](https://user-images.githubusercontent.com/26827453/174450787-aac12da8-0407-45ed-945e-3b09c1cb58d2.jpg)
 
-#### Sure Recovery, every screen that will popup
+### This never happened on elitedesks only on elitebook, I guess thats cause the software and efi can't communicate anymore since the bios was erased and now healed 
 
-#### Downloading Boot.wmi
+![nosystem](https://user-images.githubusercontent.com/26827453/174450799-16efc4ad-1040-428a-ab43-32b037da372c.jpg)
 
-![Screenshot](.870.g3/boot.wim.jpg)
+### Sure Recovery, every screen that will popup
 
-#### Downloading Boot.sdi
+### Downloading Boot.wmi
 
-![Screenshot](.870.g3/boot.sdi.jpg)
+![boot wim](https://user-images.githubusercontent.com/26827453/174450804-1942af37-3c8c-4e3d-8584-a2d7be755999.jpg)
 
-#### Downloadintg BCD 
+### Downloading Boot.sdi
 
-![Screenshot](.870.g3/bcd.jpg)
+![boot sdi](https://user-images.githubusercontent.com/26827453/174450807-d37723bb-50f0-4f41-9433-1ee3253dc812.jpg)
+
+### Downloadintg BCD 
+
+![bcd](https://user-images.githubusercontent.com/26827453/174450816-944f3180-40ee-4876-acd5-7b2b11ec3a05.jpg)
 
 
-#### Device that was hacked in 3.0 seconds and I confirmed the same shit works on this healing bios. But i don't recommending anyone to try, use the safe method otherwise you may get a broken cpu,gpu,mem,motherboard or anything:
+### Device that was hacked in 3.0 seconds and I confirmed the same shit works on this healing bios. But i don't recommending anyone to try, use the safe method otherwise you may get a broken cpu,gpu,mem,motherboard or anything:
 
-![Screenshot](.870.g3/system_info.jpg)
+![system_info](https://user-images.githubusercontent.com/26827453/174450821-aa87c196-263f-4d60-bbe5-e4bd9107941d.jpg)
 
-#### Connect to wifi via CIRCA (F3 in bios menu)
+### Connect to wifi via CIRCA (F3 in bios menu)
 
 * WIFI REQUIRED SINCE THERE IS NO ETHERNE INPUT ON THIS ONE 
 
-![Screenshot](.870.g3/1111.jpg)
-![Screenshot](.870.g3/wifi.jpg)
+![1111](https://user-images.githubusercontent.com/26827453/174450831-3cae7c9a-df65-4fd4-9993-295ca4ed5861.jpg)
+![wifi](https://user-images.githubusercontent.com/26827453/174450834-76b5b38b-c9f6-4528-b226-227711533ab6.jpg)
 
+### Preparing HP Setup + Windows
 
+![IMG_20220131_141511](https://user-images.githubusercontent.com/26827453/174450839-3ad789f8-fd35-4a37-b23c-471ac2f8d4b5.jpg)
 
-#### Preparing HP Setup + Windows
-
-![Screenshot](.870.g3/IMG_20220131_141511.jpg)
-
-
-
-#### WSON Bios Chip 
+### WSON Bios Chip 
 
 * 870 G3 chip is a Winbond 25Q256JVEN 2111 6048 CZ900 
 * Tested my new microscope usb, not perfect photos but it was the first time I used it :P
-
-![Screenshot](.870.g3/20220131133624067.jpg)
-![Screenshot](.870.g3/20220131133352413.jpg)
-![Screenshot](.870.g3/chip4.jpg)
-![Screenshot](.870.g3/chip5.jpg)
-
-
+* 
+![20220131133624067](https://user-images.githubusercontent.com/26827453/174450849-a0e28f40-2994-41a5-880c-79c808769d17.jpg)
+![20220131133352413](https://user-images.githubusercontent.com/26827453/174450851-a360ed93-813d-47f6-86e4-c48bfd9478ff.jpg)
+![chip4](https://user-images.githubusercontent.com/26827453/174450855-fc8eca37-374d-489e-a3c4-7bf40bb7935a.jpg)
+![chip5](https://user-images.githubusercontent.com/26827453/174450856-4ae2f3c4-2957-4314-8ec1-0fd1ff9f80ec.jpg)
 
 * Other chips for test the microscrope, they pretty good.
-![Screenshot](.870.g3/20220131133237569.jpg)
 
-#### Now we have a valid license and activated Windows 10 from stock, now go reinstall firmware and get the hell out of Windows (nah, we must run some stuff here before we do that, i will add how we gonna take over TPM later)
+![20220131133237569](https://user-images.githubusercontent.com/26827453/174450865-cb7c4e32-c46b-4453-a558-9592b24e5f95.jpg)
 
-![Screenshot](.870.g3/legally_installed_home_edition.jpg)
 
+### Now we have a valid license and activated Windows 10 from stock, now go reinstall firmware and get the hell out of Windows (nah, we must run some stuff here before we do that, i will add how we gonna take over TPM later)
+
+![legally_installed_home_edition](https://user-images.githubusercontent.com/26827453/174450872-850741e7-e3d4-42fc-8f23-8f18921a9c7b.jpg)
 
 # Recommended, safe way. Follow the same steps as on elitedesk but you need either a modded clip or a wson programmer, here is my modded one.
 
-#### My special clip in progress
-![Screenshot](.870.g3/my_custom_clip.jpg)
-![Screenshot](.870.g3/myclipconnectedtowsonchip.jpg)
+### My special clip in progress
 
+![my_custom_clip](https://user-images.githubusercontent.com/26827453/174450876-f2abeabf-4297-49b8-8b4a-f4ea635177d7.jpg)
+![myclipconnectedtowsonchip](https://user-images.githubusercontent.com/26827453/174450878-4bb39a64-d224-4ac0-b576-c2bc91b462fd.jpg)
 
-Enjoy!
+- Enjoy!
 
 ## Elitebook 820 - Programmer required!
 
@@ -559,21 +553,19 @@ My modded custom clip grabbed this one aswell, you must have the pins outside th
 
 .. If you get your clip working, there is better and more serious custom made SOP WSON SOIC VSOP SPI FLASH 8P 1.27mm on stores online, below is the modded ones from stores. Normal price on amazon is ~100-300$ but some stores in asia sell them for ~40$ - I would recommend a such one instead, its rly cool works on ALL 4x2 chips and you wont need solder anymore, connect it to your programmer or ardunio and start hack the bios dump.. 
  
-![Screenshot](.820.g3/1.jpg)
-![Screenshot](.820.g3/2.jpg)
-![Screenshot](.820.g3/3.jpg)
+![1](https://user-images.githubusercontent.com/26827453/174450891-e42c676c-12f4-4191-9076-23d9c95cd352.jpg)
+![2](https://user-images.githubusercontent.com/26827453/174450893-4d25c8d3-59a8-445b-9c4c-afe4b858a1e7.jpg)
+![3](https://user-images.githubusercontent.com/26827453/174450894-ab167bec-3cf6-40b5-89e8-01dd56593256.jpg)
 
 I have nothing more to add here, programmer required here and if you short circuit this and think you will succeed, I can promise you, you wont! Already failed on ~2 few years ago and no new bios has been released so just buy a programmer and do it the proper way, but if you really wanna try - Go for it, i don't care and don't ask me for help about this model. Its old and and sucks! 
 
-
 Cheers
-
 
 ## Repair SPM:
 
 > This is only needed if you short circuited the bios, otherwise you can fix this in bios settings under security.
 
-#### For fix the SPM if its not possible to fix this from bios security settings, see below:
+### For fix the SPM if its not possible to fix this from bios security settings, see below:
 
 If you short cuited the chip, the output from below command will be alot of wierd text and looks like a mess.
 
@@ -652,7 +644,7 @@ Please visit flashrom for more info if you are a newbie, dont guess anything bef
 
 Wel well, download flashrom (i prefer install things from the source and not via package manager with this kind of tools)
 
-#### Download flashrom and Signature
+### Download flashrom and Signature
 wget https://download.flashrom.org/releases/flashrom-v1.2.tar.bz2
 wget https://download.flashrom.org/releases/flashrom-v1.2.tar.bz2.asc
 
@@ -664,7 +656,7 @@ flashrom-v1.2.tar.bz2: OK
 flashrom-v1.2.tar.bz2.asc: OK
 ```
 
-#### Extract flashrom
+### Extract flashrom
 
 ```sh
 tar -xvf flashrom-v1.2.tar.bz2
@@ -674,20 +666,20 @@ or if wanna skip the signature part, downaload and extract via stdin
 wget -c https://download.flashrom.org/releases/flashrom-v1.2.tar.bz2 -O - | sudo tar -xj
 ```
 
-#### Install flashrom
+### Install flashrom
 
 ```sh
 cd flashrom-v1.2
 make -j$(nproc)
 ```
 
-#### If there is no errors, move on with `make install` and now, use your programmer, see available programmers via typing flashrom only and you will get all available `programmers`
+### If there is no errors, move on with `make install` and now, use your programmer, see available programmers via typing flashrom only and you will get all available `programmers`
 
 Now lets continue
 
 This is the The Secure/Recommended/Best way to erase the bios password by dump the current bios file, remove the password via prefered hexeditor, write the hacked dump without any password back to chip, voila - Done! Well, its not that easy maybe but follow below steps and everything will be fine :) 
 
-#### Flashrom will detect your chip and know its model by itself:
+### Flashrom will detect your chip and know its model by itself:
 
 * Read Chip
 
@@ -706,7 +698,7 @@ or
 ```sh
 flashrom -p ch341a_spi -r > bios_elitebook_backup.bin
 ```
-#### Now erase the bios with password protected bios
+### Now erase the bios with password protected bios
 
 ```sh
 flashrom -p ch341a_spi -E
@@ -714,13 +706,13 @@ flashrom -p ch341a_spi -E
 
 You don't need to remove the password from the bin file from a hexeditor, bios will "heal" itself.. Please try. If im wrong, just remove the password via hexedit (this will not be covered in this repo at the moment, will add a tutorial how you can do this without uploading your file for help later) and re-write the chip:
 
-#### Not needed if you are on latest models, but in case you wanna do it:
+### Not needed if you are on latest models, but in case you wanna do it:
 
 ```sh
 flashrom -p ch341a_spi -w hacked_bios_file_with_no_pw.bin
 ```
 
-#### On older bios versions, you must crack the password OR remove the password from bios file with a hexeditor
+### On older bios versions, you must crack the password OR remove the password from bios file with a hexeditor
 
 > ⚠  READ + SAVE YOUR BIOS BEFORE YOU ERASING IT IN CASE SOMETHING GOES WRONG!
 
@@ -728,11 +720,11 @@ flashrom -p ch341a_spi -w hacked_bios_file_with_no_pw.bin
 
 Download NeoProgrammer v2.2.0.10 and put the clip on the chip, read bios for backup and then erase it, done!
 
-![Screenshot](.800.g5.pics/reading_chip.png)
-![Screenshot](.800.g5.pics/neoprogrammer.png)
+![reading_chip](https://user-images.githubusercontent.com/26827453/174450930-bdd0cdaa-30ff-4869-a074-63c8ab12f98a.png)
+![neoprogrammer](https://user-images.githubusercontent.com/26827453/174450937-9bebef2e-d336-4eba-8b94-fd1076a4899c.png)
 
 
-#### On older bios versions, you must crack the password OR remove the password from bios file with a hexeditor and write the new bios file to the chip - You should know how to do this if you reading this.
+### On older bios versions, you must crack the password OR remove the password from bios file with a hexeditor and write the new bios file to the chip - You should know how to do this if you reading this.
 
 ### More devices will be added, to be continued!
 
@@ -767,11 +759,11 @@ Greetings to Jeff, all resepect!
 ](https://syntaxerrorready.wordpress.com/2010/08/24/bios-password-hack-for-hp-elitebook-part-1/)
 
 
-#### License
+## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details... 
 
-### Contact
+## Contact
 
   If you have problems, questions, ideas or suggestions please contact me on *_wuseman@nr1.nu_  - For faster contact visit Libera irc network or the webchat and type '/msg wuseman hi!' in the input bar and I will reply to you ASAP.
   
